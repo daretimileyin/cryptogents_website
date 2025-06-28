@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  @keyframes blob1 {
+    0%   { transform: translate(0px, 0px); }
+    20%  { transform: translate(180px, -130px); }
+    45%  { transform: translate(-190px, 115px); }
+    70%  { transform: translate(220px, -75px); }
+    100% { transform: translate(0px, 0px); }
+  }
+
+  @keyframes blob2 {
+    0%   { transform: translate(0px, 0px); }
+    15%  { transform: translate(-125px, -130px); }
+    40%  { transform: translate(135px, 145px); }
+    85%  { transform: translate(-155px, -85px); }
+    100% { transform: translate(0px, 0px); }
+  }
+
+  @keyframes blob3 {
+    0%   { transform: translate(0px, 0px); }
+    25%  { transform: translate(105px, 225px); }
+    60%  { transform: translate(164px, 135px); }
+    90%  { transform: translate(100px, 189px); }
+    100% { transform: translate(0px, 0px); }
+  }
+
+  @keyframes blob4 {
+    0%   { transform: translate(0px, 0px); }
+    30%  { transform: translate(-225px, -90px); }
+    55%  { transform: translate(-180px, -150px); }
+    95%  { transform: translate(-210px, -120px); }
+    100% { transform: translate(0px, 0px); }
+  }
+
+  @keyframes blob5 {
+    0%   { transform: translate(0px, 0px); }
+    10%  { transform: translate(60px, -100px); }
+    40%  { transform: translate(-90px, 140px); }
+    75%  { transform: translate(180px, -90px); }
+    100% { transform: translate(0px, 0px); }
+  }
+
+  @keyframes blob6 {
+    0%   { transform: translate(0px, 0px); }
+    20%  { transform: translate(-200px, 130px); }
+    55%  { transform: translate(120px, -150px); }
+    85%  { transform: translate(-115px, 125px); }
+    100% { transform: translate(0px, 0px); }
+  }
+
+  .animate-blob1 {
+    animation: blob1 13s infinite cubic-bezier(0.39, 0.575, 0.565, 1);
+  }
+
+  .animate-blob2 {
+    animation: blob2 18s infinite cubic-bezier(0.45, 0.05, 0.55, 0.95);
+    animation-delay: 1.2s;
+  }
+
+  .animate-blob3 {
+    animation: blob3 15s infinite cubic-bezier(0.47, 0, 0.745, 0.715);
+    animation-delay: 2.4s;
+  }
+
+  .animate-blob4 {
+    animation: blob4 19s infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    animation-delay: 0.6s;
+  }
+
+  .animate-blob5 {
+    animation: blob5 17s infinite cubic-bezier(0.25, 0.1, 0.25, 1);
+    animation-delay: 3.1s;
+  }
+
+  .animate-blob6 {
+    animation: blob6 14s infinite cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    animation-delay: 2.9s;
+  }
+}
