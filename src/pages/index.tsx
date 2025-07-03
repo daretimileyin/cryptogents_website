@@ -54,7 +54,7 @@ const Index = () => {
         <div id="crypto_training" className="hero w-[90%] lg:w-[70%] mx-auto pt-32 lg:pt-32 lg:pb-16">
           <div className="space-y-4">
             {/* Avatars + Stars */}
-            <div className="w-fit mx-auto flex gap-3">
+            <div className="w-fit mx-auto flex gap-6 lg:gap-3">
               {/* //circle div */}
               <ul className="relative w-28">
                 <li className="absolute w-9 aspect-square rounded-full overflow-hidden border-2 border-yellow-500">
@@ -83,7 +83,7 @@ const Index = () => {
                       </li>
                     ))}
                 </ul>
-                <h5 className="font-bold lg:text-lg text-white">720+ Success Stories and Counting</h5>
+                <h5 className="font-bold text-sm line-clamp-1 lg:text-lg text-white">720+ Success Stories and Counting</h5>
               </div>
             </div>
 
@@ -117,7 +117,7 @@ const Index = () => {
             <div className="text-white space-y-8">
               <h3 className="text-3xl text-center">Here's what you'll discover inside this training...</h3>
               
-              <ul className="relative flex gap-12 items-center justify-between">
+              <ul className="relative flex flex-nowrap gap-8 lg:gap-12 items-center justify-between">
 
                 {/* Radial Gradient Background */}
                 <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle,_at_center,_#22c55e_60%,_white_100%)]"></div>
@@ -169,12 +169,12 @@ const Index = () => {
           </div>
 
           {/* Insight Section */}
-          <div className="py-12 space-y-12">
-            <div className="text-white text-center space-y-8">
-              <h1 className="text-5xl font-bold">What the top 1% sales reps do, that the average sales rep doesn't.</h1>
-              <p className="w-[50%] mx-auto text-lg">Top closers don’t wing it - they operate with precision.</p>
-            </div>
-            <div className="grid grid-cols-2 gap-8">
+          <div className="py-6 lg:py-12 space-y-12">
+            <DescHeader 
+              header="What the top 1% sales reps do, that the average sales rep doesn't."
+              paragraph="Top closers don’t wing it - they operate with precision."
+            />
+            <div className="grid grid-cols-1 lg:grid-cols-2  gap-10 lg:gap-8">
               <div className="text-gray-300 space-y-6">
                 <div className="text-center">
                   <h3 className="text-2xl">The Average Sales Rep</h3>
@@ -225,7 +225,7 @@ const Index = () => {
             </div>
 
             <div className="space-y-8">
-              <div className="w-[75%] mx-auto text-center text-xl text-gray-400 space-y-8">
+              <div className="lg:w-[75%] mx-auto text-center text-lg lg:text-xl text-gray-400 space-y-8">
                 <p>Top 1% closers don't just close deals. They close them on their terms.</p>
                 <p>And that’s why the best sales reps don’t just "survive" like the others. They thrive.</p>
                 <p>But the reality? No ones born with that skillset.</p>
@@ -239,14 +239,14 @@ const Index = () => {
           </div>
 
           {/* Top Training Section */}
-          <div id="community" className="py-12">
+          <div id="community" className="py-12 space-y-8">
               <HoverGlow label="The Community"/>
               <DescHeader
                 header = "The process that turns average crypto investors into top 1% traders."
                 paragraph="This isn't just a community. This is full-scale immersion into becoming an elite crypto trader and mastering the art of digital asset investing."
               />
 
-              <div className="py-8 overflow-x-scroll scrollbar-custom">
+              <div className="py-8 overflow-x-scroll space-y-8 scrollbar-custom">
                 <div className="flex flex-nowrap gap-8">
                   {TopTrainingContent.map((content, index)=>(
                     <TopTrainingCard key={index} content={content}/>
@@ -256,7 +256,7 @@ const Index = () => {
           </div>
 
           {/* Coaches Section */}
-          <div className="py-12">
+          <div id="" className="py-12 space-y-8">
             <HoverGlow label="Training Sectors"/>
             <DescHeader 
               header="We master all timeframes, all setups and every single profitable trading pattern."

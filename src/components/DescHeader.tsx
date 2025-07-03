@@ -5,9 +5,9 @@ interface DescHeaderProps{
 
 const DescHeader = ({header , paragraph}: DescHeaderProps) => {
   return (
-    <div className="text-white text-center space-y-4">
-        <h1 className="text-5xl font-bold">{header}</h1>
-        <p className="w-[50%] mx-auto text-lg">{paragraph}</p>
+    <div className="w-full text-white text-center space-y-4">
+        <h1 className="text-3xl lg:text-5xl font-bold">{header}</h1>
+        <p className="lg:w-[50%] mx-auto lg:text-lg">{paragraph}</p>
     </div>
   )
 }

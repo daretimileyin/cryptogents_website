@@ -4,7 +4,7 @@ interface TopTrainingCardProps{
 
 const TopTrainingCard = ({content} :TopTrainingCardProps) => {
   return (
-    <div className="w-2/5 shrink-0 rounded-2xl border border-gray-400 overflow-hidden">
+    <div className="w-full lg:w-2/5 shrink-0 rounded-2xl border border-gray-400 overflow-hidden">
         <div>
             <img 
                 srcSet={content.srcSet}
@@ -16,7 +16,7 @@ const TopTrainingCard = ({content} :TopTrainingCardProps) => {
             <div className="bg-black rounded-[72px] text-white w-fit text-center px-8 py-1">{content.tag}</div>
             </div>
             <div className="space-y-4">
-            <h5 className="text-white text-3xl font-semibold">{content.header}</h5>
+            <h5 className="text-white text-2xl lg:text-3xl font-semibold">{content.header}</h5>
             <p className="text-gray-400 text-lg">{content.para}</p>
             </div>
         </div>
