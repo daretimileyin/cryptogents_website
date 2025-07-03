@@ -7,24 +7,27 @@ import avatar4 from "../assets/people_4.webp"
 import { ArrowUpRight, Check, Star, X } from "lucide-react";
 import HoverGlow from "../components/HoverGlow";
 import VideoCard from "../components/VideoCard";
-import {TopTrainingContent, videoContent } from "../const/content";
+import {CoachContent, TopTrainingContent, videoContent } from "../const/content";
 import CallCTA from "../components/CallCTA";
 import DescHeader from "../components/DescHeader";
 import TopTrainingCard from "../components/TopTrainingCard";
+import DOMPurify from 'dompurify';
+import CoachCard from "../components/CoachCard";
 
 const Index = () => {
+
   return (
     <div className="relative bg-black overflow-x-hidden">
       {/* 🔵 STATIC BACKGROUND (Blobs + Noise) */}
       <div className="fixed inset-0 z-0 pointer-events-none">
         {/* Blobs */}
         <div className="flex items-center justify-center w-full h-full">
-          <div className="w-96 aspect-square blur-[120px] opacity-70 rounded-full animate-blob1 bg-gradient-to-br from-gray-300 to-gray-600" />
-          <div className="w-96 aspect-square blur-[120px] opacity-70 rounded-full animate-blob2 bg-gradient-to-br from-slate-500 to-gray-800" />
-          <div className="w-96 aspect-square blur-[120px] opacity-70 rounded-full animate-blob3 bg-gradient-to-br from-slate-400 to-slate-700" />
-          <div className="w-96 aspect-square blur-[120px] opacity-70 rounded-full animate-blob4 bg-gradient-to-br from-gray-200 to-slate-400" />
-          <div className="w-96 aspect-square blur-[120px] opacity-70 rounded-full animate-blob5 bg-gradient-to-br from-gray-800 to-blue-400" />
-          <div className="w-96 aspect-square blur-[120px] opacity-70 rounded-full animate-blob6 bg-gradient-to-br from-gray-500 to-slate-500" />
+          <div className="lg:w-96 aspect-square blur-[120px] opacity-70 rounded-full animate-blob1 bg-gradient-to-br from-gray-300 to-gray-600" />
+          <div className="lg:w-96 aspect-square blur-[120px] opacity-70 rounded-full animate-blob2 bg-gradient-to-br from-slate-500 to-gray-800" />
+          <div className="lg:w-96 aspect-square blur-[120px] opacity-70 rounded-full animate-blob3 bg-gradient-to-br from-slate-400 to-slate-700" />
+          <div className="lg:w-96 aspect-square blur-[120px] opacity-70 rounded-full animate-blob4 bg-gradient-to-br from-gray-200 to-slate-400" />
+          <div className="lg:w-96 aspect-square blur-[120px] opacity-70 rounded-full animate-blob5 bg-gradient-to-br from-gray-800 to-blue-400" />
+          <div className="lg:w-96 aspect-square blur-[120px] opacity-70 rounded-full animate-blob6 bg-gradient-to-br from-gray-500 to-slate-500" />
         </div>
 
         {/* Noise Overlay */}
@@ -51,7 +54,7 @@ const Index = () => {
         </div>
 
         {/* Hero Section */}
-        <div id="crypto_training" className="hero w-[90%] lg:w-[70%] mx-auto pt-32 lg:pt-32 lg:pb-16">
+        <div id="crypto_training" className="hero w-[90%] lg:w-[60%] mx-auto pt-32 lg:pt-32 lg:pb-16">
           <div className="space-y-8">
             {/* Avatars + Stars */}
             <div className="w-fit mx-auto flex gap-6 lg:gap-3">
@@ -89,7 +92,7 @@ const Index = () => {
 
             {/* Headline & CTA */}
             <div className="lg:w-[80%] mx-auto space-y-6 text-center text-white">
-              <h1 className="text-3xl lg:text-6xl font-bold">
+              <h1 className="text-3xl lg:text-[3.3rem] leading-[1] font-medium">
                 How to Build World-Class Crypto Trading Skills
               </h1>
               <p className="text-lg lg:text-xl">Even if you haven't made a profitable trade yet.</p>
@@ -150,7 +153,7 @@ const Index = () => {
           </div>
         </div>
 
-        <main className="w-[90%] lg:w-[70%] mx-auto pb-16 ">
+        <main className="w-[90%] lg:w-[60%] mx-auto pb-16 ">
           {/* Video Testimonial */}
           <div className="py-12 space-y-8">
             <HoverGlow label="Student Testimonials"/>
@@ -257,14 +260,34 @@ const Index = () => {
           </div>
 
           {/* Coaches Section */}
-          <div id="" className="py-12 space-y-8">
+          <div id="coach" className="py-12 space-y-8">
             <HoverGlow label="Training Sectors"/>
             <div className="w-full text-white text-center space-y-4">
               <h1 className="text-[26px] leading-tight text-medium lg:text-5xl">We master all timeframes, all setups and every single profitable trading pattern.</h1>
               <p className="lg:w-[50%] mx-auto text-[1.1rem] font-light lg:text-lg">The right strategy is the <strong>difference between burning accounts and building consistent income.</strong></p>
             </div>
-            <div className="grid grid-cols-2">
+           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              {CoachContent.map((content, index) => {
+                const isLast = index === CoachContent.length - 1;
+                const isOdd = CoachContent.length % 2 !== 0;
+                const safeHTML = DOMPurify.sanitize(content.para);
+
+                return (
+                  <CoachCard key={index} content={content} safeHTML={safeHTML} isLast={isLast} isOdd={isOdd}/>
+                );
+              })}
             </div>
+
+          </div>
+
+          {/* Book a Call Section */}
+          <div id="book" className="py-12 space-y-8">
+              <HoverGlow label="Book a call with our team below"/>
+              <DescHeader 
+                header="You are one decision away from joining the top 1% of sales rep."
+                paragraph="Book a call with our team below to become one."
+              />
+              <div className="lg:w-[90%] mx-auto h-[450px] rounded-tr-lg rounded-tl-lg bg-gray-300 opacity-20"></div>
           </div>
         </main>
       </div>

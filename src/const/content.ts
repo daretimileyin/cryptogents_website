@@ -68,12 +68,35 @@ export const TopTrainingContent = [
 export const CoachContent = [
     {
         id: 1,
-        srcSet: "https://framerusercontent.com/images/k3xNuNLbHEgORooIxbn3RReUI.png?scale-down-to=512 512w,https://framerusercontent.com/images/k3xNuNLbHEgORooIxbn3RReUI.png 1024w",
-        src: "https://framerusercontent.com/images/k3xNuNLbHEgORooIxbn3RReUI.png",
-        tag: "Job Sourcing & Placement",
+        srcSet: "https://framerusercontent.com/images/gsue2q9Wt2HDoLSjdw1L4LWrHP8.jpg?scale-down-to=512 512w,https://framerusercontent.com/images/gsue2q9Wt2HDoLSjdw1L4LWrHP8.jpg?scale-down-to=1024 1024w,https://framerusercontent.com/images/gsue2q9Wt2HDoLSjdw1L4LWrHP8.jpg?scale-down-to=2048 2048w,https://framerusercontent.com/images/gsue2q9Wt2HDoLSjdw1L4LWrHP8.jpg 3088w",
+        src: "https://framerusercontent.com/images/gsue2q9Wt2HDoLSjdw1L4LWrHP8.jpg",
         keywords: ["B2C", "Career Growth", "Management", "B2B", "Object Handling"], 
         coach: "Founder: JJ Hernandez",
-        header: "Placement in a Top 1% Sales Role",
-        para: "We don’t just train you - we place you. With 15+ elite companies hiring every month, you’ll get direct access to exclusive high-ticket roles."
+        para: "JJ is a seasoned closer and sales leader who’s helped generate millions in revenue. He’s trained reps, led teams, and built sales machines from the ground up—working under names like Alex Hormozi and Iman Gadzhi. He’s also consulted for top creators like Daniel Iles and Roslan Bendenia, Ashton Hall and more helping them scale fast and sell with confidence."
     },
+    {
+        id: 2,
+        srcSet: "https://framerusercontent.com/images/W7MsLgM9zqeXPdLwHnP2frW9uw.jpg?scale-down-to=512 512w,https://framerusercontent.com/images/W7MsLgM9zqeXPdLwHnP2frW9uw.jpg?scale-down-to=1024 1024w,https://framerusercontent.com/images/W7MsLgM9zqeXPdLwHnP2frW9uw.jpg?scale-down-to=2048 2048w,https://framerusercontent.com/images/W7MsLgM9zqeXPdLwHnP2frW9uw.jpg?scale-down-to=4096 4096w,https://framerusercontent.com/images/W7MsLgM9zqeXPdLwHnP2frW9uw.jpg 6000w",
+        src: "https://framerusercontent.com/images/W7MsLgM9zqeXPdLwHnP2frW9uw.jpg",
+        keywords: ["B2C", "Career Growth", "Management", "B2B", "Object Handling"], 
+        coach: "Coach: Scott Brunning",
+        para: "<strong>Scott Brunning is a high-performance sales coach and sales manager who’s personally closed over $3M in revenue, including singular deals of up to $104,000, and managed teams doing $10M annually.</strong><br/>Scott built his reputation working alongside top industry names like Iman Gadzhi, and managing sales teams across multiple seven and eight-figure offers. "
+    },
+    {
+        id: 3,
+        srcSet: "https://framerusercontent.com/images/cvJAEnJJ7QESBRU1mddYLzMOGeo.jpg?scale-down-to=512 512w,https://framerusercontent.com/images/cvJAEnJJ7QESBRU1mddYLzMOGeo.jpg 1000w",
+        src: "https://framerusercontent.com/images/cvJAEnJJ7QESBRU1mddYLzMOGeo.jpg",
+        keywords: ["B2C", "Career Growth", "Management", "B2B", "Object Handling"], 
+        coach: "Coach: Cole Verbeek",
+        para: "Cole Verbeek is a high-performance closer who blends sharp sales instincts with deep psychological insight. He went from selling knives door-to-door to upselling at North America’s largest jewelry store, then launched a wellness agency at 19 and scaled it to $20K/month. Dropping out of marketing school, he doubled down on real-world learning—later joining Iman Gadzhi’s team to train setters and optimize sales systems. Now at Wing Girl Method, Cole’s closed over $850K in revenue and averages $500+ CCPL. He doesn’t just sell—he studies what makes people buy, trust, and transform."
+    },
+    {
+        id: 4,
+        srcSet: "https://framerusercontent.com/images/BbOowqb0hzDx5zpUQzIoY0Mw.jpeg?scale-down-to=512 512w,https://framerusercontent.com/images/BbOowqb0hzDx5zpUQzIoY0Mw.jpeg?scale-down-to=1024 1024w,https://framerusercontent.com/images/BbOowqb0hzDx5zpUQzIoY0Mw.jpeg?scale-down-to=2048 2048w,https://framerusercontent.com/images/BbOowqb0hzDx5zpUQzIoY0Mw.jpeg 2444w",
+        src: "https://framerusercontent.com/images/BbOowqb0hzDx5zpUQzIoY0Mw.jpeg",
+        keywords: ["B2C", "Career Growth", "Management", "B2B", "Object Handling"], 
+        coach: "Coach: Scott Brunning",
+        para: "<strong>Scott Brunning is a high-performance sales coach and sales manager who’s personally closed over $3M in revenue, including singular deals of up to $104,000, and managed teams doing $10M annually.</strong><br/>Scott built his reputation working alongside top industry names like Iman Gadzhi, and managing sales teams across multiple seven and eight-figure offers. "
+    },
+
 ]
