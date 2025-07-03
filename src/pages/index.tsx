@@ -7,7 +7,10 @@ import avatar4 from "../assets/people_4.webp"
 import { ArrowUpRight, Check, Star, X } from "lucide-react";
 import HoverGlow from "../components/HoverGlow";
 import VideoCard from "../components/VideoCard";
-import { videoContent } from "../const/content";
+import {TopTrainingContent, videoContent } from "../const/content";
+import CallCTA from "../components/CallCTA";
+import DescHeader from "../components/DescHeader";
+import TopTrainingCard from "../components/TopTrainingCard";
 
 const Index = () => {
   return (
@@ -38,17 +41,17 @@ const Index = () => {
           <div className="px-4 lg:w-[70%] mx-auto flex flex-row justify-between items-center py-4">
             <img className="w-16" src={logo} alt="Logo" />
             <div className="hidden lg:flex flex-row gap-12 text-white text-lg font-medium">
-              <a href="/" className="hover:opacity-50 hover:text-blue-500 duration-300 ease-in-out">Free Training</a>
-              <a href="/" className="hover:opacity-50 hover:text-blue-500 duration-300 ease-in-out">Success Stories</a>
-              <a href="/" className="hover:opacity-50 hover:text-blue-500 duration-300 ease-in-out">The Program</a>
-              <a href="/" className="hover:opacity-50 hover:text-blue-500 duration-300 ease-in-out">Our Coaches</a>
+              <a href="#crypto_training" className="hover:opacity-50 hover:text-blue-500 duration-300 ease-in-out">Crypto Training</a>
+              <a href="#community" className="hover:opacity-50 hover:text-blue-500 duration-300 ease-in-out">The Community</a>
+              <a href="#referral" className="hover:opacity-50 hover:text-blue-500 duration-300 ease-in-out">Trading Referrals</a>
+              <a href="gentlemen" className="hover:opacity-50 hover:text-blue-500 duration-300 ease-in-out">The Gentlemen</a>
             </div>
-            <button className="font-bold px-4 py-4 flex gap-2 bg-white rounded-xl lg:rounded-lg">Book a Call <ArrowUpRight/></button>
+            <CallCTA/>
           </div>
         </div>
 
         {/* Hero Section */}
-        <div className="hero w-[90%] lg:w-[70%] mx-auto pt-32 pb-16 lg:py-32">
+        <div id="crypto_training" className="hero w-[90%] lg:w-[70%] mx-auto pt-32 lg:pt-32 lg:pb-16">
           <div className="space-y-4">
             {/* Avatars + Stars */}
             <div className="w-fit mx-auto flex gap-3">
@@ -80,16 +83,16 @@ const Index = () => {
                       </li>
                     ))}
                 </ul>
-                <h5 className="font-bold lg:text-lg text-white">200+ Successful Students</h5>
+                <h5 className="font-bold lg:text-lg text-white">720+ Success Stories and Counting</h5>
               </div>
             </div>
 
             {/* Headline & CTA */}
             <div className="lg:w-[80%] mx-auto space-y-6 text-center text-white">
               <h1 className="text-3xl lg:text-6xl font-bold">
-                How to Become a World-Class Sales Rep on a Top 1% Offer
+                How to Build World-Class Crypto Trading Skills
               </h1>
-              <p className="text-lg lg:text-xl">Even if you've never closed a deal in your life.</p>
+              <p className="text-lg lg:text-xl">Even if you haven't made a profitable trade yet.</p>
               <a
                 href="/"
                 className="inline-flex w-full lg:w-fit items-center justify-center px-12 py-2 lg:py-3 rounded-md gap-2 bg-white font-semibold text-lg text-black"
@@ -144,85 +147,126 @@ const Index = () => {
               </ul>
 
             </div>
-
-            {/* Video Testimonial */}
-            <div className="py-12 space-y-8">
-              <HoverGlow/>
-              <div className="text-white text-center space-y-4">
-                <h1 className="text-5xl font-bold">Hear it directly from our students</h1>
-                <p className="w-[50%] mx-auto text-lg">The best way to judge any program? See the results it creates. Here’s what happened when real sales reps applied our process.  </p>
-              </div>
-
-              {/* Testimonial Carousel Video */}
-              <div className="flex gap-4 flex-nowrap overflow-hidden">
-                {
-                  videoContent.map((content, index)=>(
-                    <VideoCard key={index} content={content}/>
-                  ))
-                }
-                 
-              </div>
-
-              {/* What you Get */}
-              <div className="py-12 space-y-12">
-                <div className="text-white text-center space-y-8">
-                  <h1 className="text-5xl font-bold">What the top 1% sales reps do, that the average sales rep doesn't.</h1>
-                  <p className="w-[50%] mx-auto text-lg">Top closers don’t wing it - they operate with precision.</p>
-                </div>
-                <div className="grid grid-cols-2 gap-8">
-                  <div className="text-gray-300 space-y-6">
-                    <div className="text-center">
-                      <h3 className="text-2xl">The Average Sales Rep</h3>
-                    </div>
-                    <ul className="space-y-2 border p-6 rounded-xl">
-                      <li className="flex items-center gap-2">
-                        <X className="text-gray-600" size={28}/>
-                        <p className="text-lg">Uses basic, overused wordtracks and scripts from their favorite sales guru.</p>
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <X className="text-gray-600" size={28}/>
-                        <p className="text-lg">Follows a script from 2023, triggering instant sales resistance from prospects.  </p>
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <X className="text-gray-600" size={28}/>
-                        <p className="text-lg">Jumps into each sales call hoping for the best, instead of using a proven strategy.</p>
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <X className="text-gray-600" size={28}/>
-                        <p className="text-lg">Stays on a low-quality offer that doesn't care about them or their teammates.</p>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div className="text-gray-300 space-y-6">
-                    <div className="text-center">
-                      <h3 className="text-2xl font-bold">A Sales.io Mentee</h3>
-                    </div>
-                    <ul className="space-y-2 border p-6 rounded-xl">
-                      <li className="flex items-center gap-2">
-                        <Check className="text-green-600" size={28}/>
-                        <p className="text-lg">Uses basic, overused wordtracks and scripts from their favorite sales guru.</p>
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <Check className="text-green-600" size={28}/>
-                        <p className="text-lg">Follows a script from 2023, triggering instant sales resistance from prospects.  </p>
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <Check className="text-green-600" size={28}/>
-                        <p className="text-lg">Jumps into each sales call hoping for the best, instead of using a proven strategy.</p>
-                      </li>
-                      <li className="flex items-center gap-2">
-                        <Check className="text-green-600" size={28}/>
-                        <p className="text-lg">Stays on a low-quality offer that doesn't care about them or their teammates.</p>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-            </div>
           </div>
         </div>
+
+        <main className="w-[90%] lg:w-[70%] mx-auto pb-16 ">
+          {/* Video Testimonial */}
+          <div className="py-12 space-y-8">
+            <HoverGlow label="Student Testimonials"/>
+            <DescHeader 
+              header="Hear it directly from our students" 
+              paragraph="The best way to judge any program? See the results it creates. Here’s what happened when real sales reps applied our process."
+            />
+            {/* Testimonial Carousel Video */}
+            <div className="flex gap-4 flex-nowrap overflow-hidden">
+              {
+                videoContent.map((content, index)=>(
+                  <VideoCard key={index} content={content}/>
+                ))
+              }    
+            </div>
+          </div>
+
+          {/* Insight Section */}
+          <div className="py-12 space-y-12">
+            <div className="text-white text-center space-y-8">
+              <h1 className="text-5xl font-bold">What the top 1% sales reps do, that the average sales rep doesn't.</h1>
+              <p className="w-[50%] mx-auto text-lg">Top closers don’t wing it - they operate with precision.</p>
+            </div>
+            <div className="grid grid-cols-2 gap-8">
+              <div className="text-gray-300 space-y-6">
+                <div className="text-center">
+                  <h3 className="text-2xl">The Average Sales Rep</h3>
+                </div>
+                <ul className="space-y-2 border p-6 rounded-xl">
+                  <li className="flex items-center gap-2">
+                    <X className="text-gray-600" size={28}/>
+                    <p className="text-lg">Uses basic, overused wordtracks and scripts from their favorite sales guru.</p>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <X className="text-gray-600" size={28}/>
+                    <p className="text-lg">Follows a script from 2023, triggering instant sales resistance from prospects.  </p>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <X className="text-gray-600" size={28}/>
+                    <p className="text-lg">Jumps into each sales call hoping for the best, instead of using a proven strategy.</p>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <X className="text-gray-600" size={28}/>
+                    <p className="text-lg">Stays on a low-quality offer that doesn't care about them or their teammates.</p>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="text-gray-300 space-y-6">
+                <div className="text-center">
+                  <h3 className="text-2xl font-bold">A Sales.io Mentee</h3>
+                </div>
+                <ul className="space-y-2 border p-6 rounded-xl">
+                  <li className="flex items-center gap-2">
+                    <Check className="text-green-600" size={28}/>
+                    <p className="text-lg">Uses basic, overused wordtracks and scripts from their favorite sales guru.</p>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Check className="text-green-600" size={28}/>
+                    <p className="text-lg">Follows a script from 2023, triggering instant sales resistance from prospects.  </p>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Check className="text-green-600" size={28}/>
+                    <p className="text-lg">Jumps into each sales call hoping for the best, instead of using a proven strategy.</p>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Check className="text-green-600" size={28}/>
+                    <p className="text-lg">Stays on a low-quality offer that doesn't care about them or their teammates.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="space-y-8">
+              <div className="w-[75%] mx-auto text-center text-xl text-gray-400 space-y-8">
+                <p>Top 1% closers don't just close deals. They close them on their terms.</p>
+                <p>And that’s why the best sales reps don’t just "survive" like the others. They thrive.</p>
+                <p>But the reality? No ones born with that skillset.</p>
+                <p>You need to learn it from someone who’s actually done it at the highest level.</p>
+              </div>
+              <div className="space-y-8">
+                <h5 className="text-2xl text-white text-center">That's where we come in</h5>
+                <CallCTA className="mx-auto"/>
+              </div>
+            </div>
+          </div>
+
+          {/* Top Training Section */}
+          <div id="community" className="py-12">
+              <HoverGlow label="The Community"/>
+              <DescHeader
+                header = "The process that turns average crypto investors into top 1% traders."
+                paragraph="This isn't just a community. This is full-scale immersion into becoming an elite crypto trader and mastering the art of digital asset investing."
+              />
+
+              <div className="py-8 overflow-x-scroll scrollbar-custom">
+                <div className="flex flex-nowrap gap-8">
+                  {TopTrainingContent.map((content, index)=>(
+                    <TopTrainingCard key={index} content={content}/>
+                  ))}
+                </div>
+              </div>
+          </div>
+
+          {/* Coaches Section */}
+          <div className="py-12">
+            <HoverGlow label="Training Sectors"/>
+            <DescHeader 
+              header="We master all timeframes, all setups and every single profitable trading pattern."
+              paragraph="The right strategy is the difference between burning accounts and building consistent income."
+            />
+
+            <div className="grid grid-cols-2">
+            </div>
+          </div>
+        </main>
       </div>
     </div>
   );

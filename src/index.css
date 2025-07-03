@@ -3,6 +3,19 @@
 @tailwind utilities;
 
 @layer utilities {
+  .scrollbar-custom::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  .scrollbar-custom::-webkit-scrollbar-track {
+    background: rgba(125, 125, 125, 0.1);
+  }
+
+  .scrollbar-custom::-webkit-scrollbar-thumb {
+    background-color: #243145; /* Tailwind's blue-500 */
+    border-radius: 9999px;
+  }
   @keyframes blob1 {
     0%   { transform: translate(0px, 0px); }
     20%  { transform: translate(180px, -130px); }
