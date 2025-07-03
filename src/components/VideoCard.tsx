@@ -6,8 +6,8 @@ const VideoCard = ({ content } : any) => {
             <video className="w-full h-full object-cover" src={content.video_url} poster={content.poster_url} controls playsInline preload="metadata"></video>
         </div>
         <div className="p-8 space-y-2">
-            <p className="text-[1.9rem] font-medium text-white">"${content.quote}"</p>
-            <p className="text-gray-500 text-2xl">{content.name}</p>
+            <p className="text-[1.55rem] leading-8 font-medium text-white">"${content.quote}"</p>
+            <p className="text-gray-500 text-xl">{content.name}</p>
         </div>
     </div>
   )

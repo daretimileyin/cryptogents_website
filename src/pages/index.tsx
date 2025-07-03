@@ -52,7 +52,7 @@ const Index = () => {
 
         {/* Hero Section */}
         <div id="crypto_training" className="hero w-[90%] lg:w-[70%] mx-auto pt-32 lg:pt-32 lg:pb-16">
-          <div className="space-y-4">
+          <div className="space-y-8">
             {/* Avatars + Stars */}
             <div className="w-fit mx-auto flex gap-6 lg:gap-3">
               {/* //circle div */}
@@ -115,9 +115,9 @@ const Index = () => {
 
             {/* Video Extra */}
             <div className="text-white space-y-8">
-              <h3 className="text-3xl text-center">Here's what you'll discover inside this training...</h3>
+              <h3 className="text-[1.4rem] font-medium lg:text-3xl text-center">Here's what you'll discover inside this training...</h3>
               
-              <ul className="relative flex flex-nowrap gap-8 lg:gap-12 items-center justify-between">
+              <ul className="relative flex flex-col lg:flex-row gap-4 lg:gap-12 items-center justify-between">
 
                 {/* Radial Gradient Background */}
                 <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle,_at_center,_#22c55e_60%,_white_100%)]"></div>
@@ -125,21 +125,21 @@ const Index = () => {
                 {/* List Items */}
                 <li className="flex gap-4 items-center p-4 border border-gray-200 rounded-2xl backdrop-blur-sm">
                   <Check className="text-green-600 w-16" />
-                  <p className="text-lg font-medium">
+                  <p className="text-[1.13rem] lg:text-lg leading-tight font-medium">
                     The #1 reason why sales reps fail to close consistently and how you can fix it in days.
                   </p>
                 </li>
 
                 <li className="flex gap-4 items-center p-4 border border-gray-200 rounded-2xl backdrop-blur-sm">
                   <Check className="text-green-600 w-16" />
-                  <p className="text-lg font-medium">
+                  <p className="text-[1.13rem] lg:text-lg leading-tight font-medium">
                     The #1 reason why sales reps fail to close consistently and how you can fix it in days.
                   </p>
                 </li>
 
                 <li className="flex gap-4 items-center p-4 border border-gray-200 rounded-2xl backdrop-blur-sm">
                   <Check className="text-green-600 w-16" />
-                  <p className="text-lg font-medium">
+                  <p className="text-[1.13rem] lg:text-lg leading-tight font-medium">
                     The #1 reason why sales reps fail to close consistently and how you can fix it in days.
                   </p>
                 </li>
@@ -154,10 +154,11 @@ const Index = () => {
           {/* Video Testimonial */}
           <div className="py-12 space-y-8">
             <HoverGlow label="Student Testimonials"/>
-            <DescHeader 
-              header="Hear it directly from our students" 
-              paragraph="The best way to judge any program? See the results it creates. Here’s what happened when real sales reps applied our process."
-            />
+            <div className="w-full text-white text-center space-y-4">
+              <h1 className="text-[2rem] leading-tight lg:text-5xl font-medium">Hear it directly from our students</h1>
+              <p className="lg:w-[50%] mx-auto text-[1.15rem] lg:text-lg">The best way to judge any program? See the results it creates. Here’s what happened when real sales reps applied our process.</p>
+            </div>
+            
             {/* Testimonial Carousel Video */}
             <div className="flex gap-4 flex-nowrap overflow-hidden">
               {
@@ -169,7 +170,7 @@ const Index = () => {
           </div>
 
           {/* Insight Section */}
-          <div className="py-6 lg:py-12 space-y-12">
+          <div className="py-6 lg:py-12 space-y-6 lg:space-y-12">
             <DescHeader 
               header="What the top 1% sales reps do, that the average sales rep doesn't."
               paragraph="Top closers don’t wing it - they operate with precision."
@@ -258,11 +259,10 @@ const Index = () => {
           {/* Coaches Section */}
           <div id="" className="py-12 space-y-8">
             <HoverGlow label="Training Sectors"/>
-            <DescHeader 
-              header="We master all timeframes, all setups and every single profitable trading pattern."
-              paragraph="The right strategy is the difference between burning accounts and building consistent income."
-            />
-
+            <div className="w-full text-white text-center space-y-4">
+              <h1 className="text-[26px] leading-tight text-medium lg:text-5xl">We master all timeframes, all setups and every single profitable trading pattern.</h1>
+              <p className="lg:w-[50%] mx-auto text-[1.1rem] font-light lg:text-lg">The right strategy is the <strong>difference between burning accounts and building consistent income.</strong></p>
+            </div>
             <div className="grid grid-cols-2">
             </div>
           </div>
