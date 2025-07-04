@@ -20,6 +20,13 @@ export const videoContent = [
         video_url : "https://framerusercontent.com/assets/NQtyJZCAhD2HN6601YkQoB0PhS8.mp4",
         poster_url: "https://framerusercontent.com/images/hss4TPscTRvhBpHWUmARBVlbQ.png"
     },
+    {
+        id: 4,
+        quote: "10k months. 50% closing rate. It feels like I have GTA cheat codes for closing",
+        name: "Max Linley",
+        video_url : "https://framerusercontent.com/assets/NQtyJZCAhD2HN6601YkQoB0PhS8.mp4",
+        poster_url: "https://framerusercontent.com/images/hss4TPscTRvhBpHWUmARBVlbQ.png"
+    },
 ]
 
 export const TopTrainingContent = [
@@ -98,5 +105,34 @@ export const CoachContent = [
         coach: "Coach: Scott Brunning",
         para: "<strong>Scott Brunning is a high-performance sales coach and sales manager who’s personally closed over $3M in revenue, including singular deals of up to $104,000, and managed teams doing $10M annually.</strong><br/>Scott built his reputation working alongside top industry names like Iman Gadzhi, and managing sales teams across multiple seven and eight-figure offers. "
     },
+
+]
+
+export const faqContent = [
+    {
+        id: 1,
+        question: "How is this different from other sales training programs?",
+        answer: "Most sales training is outdated and theoretical. It’s built by people who haven't actually closed high-ticket deals at the highest levels. This isn’t just a “training program”. It’s a full immersion into elite sales. You’re learning directly from top 1% sales reps who have been leading closers for people like Alex Hormozi, Iman Gadzhi, Daniel Iles, and plenty of your other favorite influencers. Plus, we don’t just train you into a top 1% sales role",
+    },
+    {
+        id: 2,
+        question: "How does the guaranteed placement work?",
+        answer: "Every month, we connect our trained reps with 15+ high-paying sales opportunities. If you meet the standards we set inside the program, you’ll be matched with companies looking for top talent. This is not a job board. This is a direct path to getting hired in a high-ticket sales RollerCoaster.",
+    },
+    {
+        id: 3,
+        question: "What kind of companies could I be selling for?",
+        answer: "We only work with top-tier companies in high-ticket industries, such as business & marketing coaching, financial services, SaaS & tech sales, online coaching, education and info-product sales, and investment & consulting firms. We ensure that the opportunities you’re placed in are high-quality, scalable, and have strong earning potential.",
+    },
+    {
+        id: 4,
+        question: "How much time do I need to commit?",
+        answer: "This program is built for serious sales professionals who want to level up fast. If you can commit a few hours per week to training, roleplays, and implementing what you learn, you’ll start seeing rapid progress.",
+    },
+    {
+        id: 5,
+        question: "How do I know sales training is worth the investment?",
+        answer: "Think about it this way: landing one top-tier role, doubling your close rate, or even increasing show rate will drastically change not just how you perform once, but for the rest of your life. What you learn here doesn’t just help you land a better job or close a few extra deals… It sets you up for a career of high earnings.",
+    }
 
 ]

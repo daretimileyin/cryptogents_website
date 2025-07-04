@@ -6,15 +6,17 @@ import avatar3 from "../assets/people_3.webp"
 import avatar4 from "../assets/people_4.webp"
 import { ArrowUpRight, Check, Star, X } from "lucide-react";
 import HoverGlow from "../components/HoverGlow";
-import VideoCard from "../components/VideoCard";
-import {CoachContent, TopTrainingContent, videoContent } from "../const/content";
+import {CoachContent, faqContent} from "../const/content";
 import CallCTA from "../components/CallCTA";
 import DescHeader from "../components/DescHeader";
-import TopTrainingCard from "../components/TopTrainingCard";
 import DOMPurify from 'dompurify';
 import CoachCard from "../components/CoachCard";
+import { DropDownTab } from "../components/DropDownTab";
+import { VideoCarousel } from "../components/VideoCarousel";
+import { CommunityCarousel } from "../components/CommunityCarousel";
 
 const Index = () => {
+  
 
   return (
     <div className="relative bg-black overflow-x-hidden">
@@ -155,22 +157,7 @@ const Index = () => {
 
         <main className="w-[90%] lg:w-[60%] mx-auto pb-16 ">
           {/* Video Testimonial */}
-          <div className="py-12 space-y-8">
-            <HoverGlow label="Student Testimonials"/>
-            <div className="w-full text-white text-center space-y-4">
-              <h1 className="text-[2rem] leading-tight lg:text-5xl font-medium">Hear it directly from our students</h1>
-              <p className="lg:w-[50%] mx-auto text-[1.15rem] lg:text-lg">The best way to judge any program? See the results it creates. Here’s what happened when real sales reps applied our process.</p>
-            </div>
-            
-            {/* Testimonial Carousel Video */}
-            <div className="flex gap-4 flex-nowrap overflow-hidden">
-              {
-                videoContent.map((content, index)=>(
-                  <VideoCard key={index} content={content}/>
-                ))
-              }    
-            </div>
-          </div>
+          <VideoCarousel />
 
           {/* Insight Section */}
           <div className="py-6 lg:py-12 space-y-6 lg:space-y-12">
@@ -242,22 +229,8 @@ const Index = () => {
             </div>
           </div>
 
-          {/* Top Training Section */}
-          <div id="community" className="py-12 space-y-8">
-              <HoverGlow label="The Community"/>
-              <DescHeader
-                header = "The process that turns average crypto investors into top 1% traders."
-                paragraph="This isn't just a community. This is full-scale immersion into becoming an elite crypto trader and mastering the art of digital asset investing."
-              />
-
-              <div className="py-8 overflow-x-scroll space-y-8 scrollbar-custom">
-                <div className="flex flex-nowrap gap-8">
-                  {TopTrainingContent.map((content, index)=>(
-                    <TopTrainingCard key={index} content={content}/>
-                  ))}
-                </div>
-              </div>
-          </div>
+          {/* Community Section */}
+          <CommunityCarousel/>
 
           {/* Coaches Section */}
           <div id="coach" className="py-12 space-y-8">
@@ -287,9 +260,45 @@ const Index = () => {
                 header="You are one decision away from joining the top 1% of sales rep."
                 paragraph="Book a call with our team below to become one."
               />
-              <div className="lg:w-[90%] mx-auto h-[450px] rounded-tr-lg rounded-tl-lg bg-gray-300 opacity-20"></div>
+              <CallCTA className="mx-auto"/>
+          </div>
+
+          {/* FAQ Section */}
+          <div id="book" className="py-12 space-y-8">
+              <HoverGlow label="frequently asked questions"/>
+              <DescHeader 
+                header="Still have some questions? Let's go through them."
+              />
+              <div className="space-y-4">
+                {
+                  faqContent.map((content: any, index:number)=>(
+                    <DropDownTab key={index} content={content} />
+                  ))
+                }
+              </div>
+          </div>
+
+          {/* FootNote Section */}
+          <div id="extra" className="py-12 space-y-8">
+            <div className="space-y-8 border border-gray-800 bg-black/40 px-32 py-16 rounded-3xl">
+              <h1 className="text-white text-5xl text-center px-4">Becoming world-class and mastering sales doesn't just "happen"</h1>
+              <p className="text-gray-300 text-center text-lg">If you’re serious about leveling up your closing game, you need the right system, the right training, and the right team behind you. We're here to give you the exact tools and strategies top closers use to dominate.</p>
+              <CallCTA className="mx-auto"/>
+            </div>
           </div>
         </main>
+        <div className="bg-black/70 border border-gray-800 py-12">
+          <div className="w-[40%] mx-auto text-gray-300 text-center space-y-8">
+            <div className="space-y-4">
+              <p>Copyright © 2025 Sales.io. All Rights Reserved.</p>
+              <p className="flex flex-col text-center text-sm"><strong>Earnings Disclaimer: </strong>The testimonials and examples on this site are from real students and reflect their experiences. However, these results are not typical, and your results may vary. We do not guarantee any specific income or success. Your level of success depends on factors like your work ethic, background, experience, and dedication. Any income or earnings mentioned are estimates or past results and should not be considered average or guaranteed future outcomes.</p>
+              <p className="flex flex-col text-center text-sm"><strong>FTC Disclosure: </strong>Some of the links on this page may be affiliate links. If you choose to purchase through these links, we may earn a small commission — at no extra cost to you. We only recommend tools and services we believe in.</p>
+              <p className="flex flex-col text-center text-sm"><strong>Facebook Disclaimer: </strong>This site is not a part of the Facebook™ website or Facebook Inc. Additionally, this site is NOT endorsed by Facebook in any way. FACEBOOK™ is a trademark of FACEBOOK, Inc.</p>
+            </div>
+            <div className="text-lg">Terms and Conditions | Privacy Policy | Refund Policy | Cookies Policy</div>
+            <a href="/" className="block"><small>Design & Development by </small></a>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 interface DescHeaderProps{
     header: string;
-    paragraph: string;
+    paragraph?: string;
 }
 
 const DescHeader = ({header , paragraph}: DescHeaderProps) => {
