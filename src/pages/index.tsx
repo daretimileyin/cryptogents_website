@@ -282,7 +282,7 @@ const Index = () => {
             initial={{ opacity: 0, y: 60 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            viewport={{ once: true, amount: 0.3 }}
+            viewport={{ once: true }}
           >
             <VideoCarousel />
           </motion.div>
@@ -293,7 +293,7 @@ const Index = () => {
             initial={{ opacity: 0, y: 60 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            viewport={{ once: true, amount: 0.3 }}
+            viewport={{ once: true }}
           >
             <motion.div
               initial={{ opacity: 0, y: 40 }}
@@ -421,7 +421,7 @@ const Index = () => {
             initial={{ opacity: 0, y: 60 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            viewport={{ once: true, amount: 0.3 }}
+            viewport={{ once: true }}
           >
             <CommunityCarousel/>
           </motion.div>
@@ -433,7 +433,7 @@ const Index = () => {
             initial={{ opacity: 0, y: 60 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            viewport={{ once: true, amount: 0.3 }}
+            viewport={{ once: true }}
           >
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -483,7 +483,7 @@ const Index = () => {
             initial={{ opacity: 0, y: 60 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            viewport={{ once: true, amount: 0.3 }}
+            viewport={{ once: true }}
           >
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -525,7 +525,7 @@ const Index = () => {
             initial={{ opacity: 0, y: 60 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            viewport={{ once: true, amount: 0.3 }}
+            viewport={{ once: true }}
           >
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -571,7 +571,7 @@ const Index = () => {
             initial={{ opacity: 0, y: 60 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            viewport={{ once: true, amount: 0.3 }}
+            viewport={{ once: true }}
           >
             <motion.div 
               className="space-y-8 border border-gray-800 bg-black/40 px-4 lg:px-32 py-16 rounded-3xl"
