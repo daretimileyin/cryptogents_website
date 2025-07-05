@@ -29,8 +29,8 @@ export const CommunityCarousel = () => {
 
               <div className="relative">
                 {/* Fade out edges */}
-                <div className="pointer-events-none absolute top-0 bottom-0 left-0 w-12 bg-gradient-to-r from-black to-transparent blur-md z-10" />
-                <div className="pointer-events-none absolute top-0 bottom-0 right-0 w-12 bg-gradient-to-l from-black to-transparent blur-md z-10" />
+                <div className="pointer-events-none absolute top-0 bottom-0 left-0 w-12 bg-linear-to-r from-black to-transparent blur-md z-10" />
+                <div className="pointer-events-none absolute top-0 bottom-0 right-0 w-12 bg-linear-to-l from-black to-transparent blur-md z-10" />
 
                 {/* Prev Button */}
                 <button

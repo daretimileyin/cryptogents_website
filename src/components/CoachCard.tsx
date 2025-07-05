@@ -22,16 +22,24 @@ const CoachCard = ({content , safeHTML, isLast, isOdd}: CoachCardProps) => {
         </div>
         <div className="p-6 space-y-2">
             <div className="flex flex-wrap items-center justify-center gap-2">
-            {content.keywords.map((item: string, index: number) => (
-                <div
-                key={index}
-                className="p-[2px] w-fit bg-[linear-gradient(to_right,red,orange,yellow,green,violet)] grayscale-[0.75] rounded-[72px] opacity-100"
-                >
-                <div className="bg-black rounded-[72px] text-white w-fit text-center px-4 py-1">
-                    {item}
-                </div>
-                </div>
-            ))}
+            {content.keywords.map((item: string, index: number) => {
+                const isEven = index % 2 === 0;
+                const delay = `${(index % 3) * 0.5}s`; // Staggered delay
+
+                return (
+                    <div
+                    key={index}
+                    className={`p-[2px] w-fit rounded-[72px] opacity-100 ${
+                        isEven ? 'purple-custom-gradient animate-rotate-border-cw' : 'green-custom-gradient animate-rotate-border-ccw'
+                    }`}
+                    style={{ animationDelay: delay }}
+                    >
+                    <div className="border border-neutral-800 bg-neutral-900 rounded-[72px] text-white w-fit text-center px-4 py-1">
+                        {item}
+                    </div>
+                    </div>
+                );
+            })}
             </div>
             <div className="py-2 space-y-4">
             <p 

@@ -1,30 +1,113 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
-@layer utilities {
-  .no-scrollbar::-webkit-scrollbar {
+@property --border-angle {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg;
+}
+
+.green-custom-gradient {
+  background: conic-gradient(from var(--border-angle), #010101 50%, #4CAF50 70%, #010101 100%);
+}
+
+.purple-custom-gradient {
+  background: conic-gradient(from var(--border-angle), #010101 50%, #8E44AD 70%, #010101 100%);
+}
+
+/* Clockwise */
+@keyframes rotate-border-cw {
+  to {
+    --border-angle: 360deg;
+  }
+}
+
+/* Counter-clockwise */
+@keyframes rotate-border-ccw {
+  to {
+    --border-angle: -360deg;
+  }
+}
+
+/* Utilities */
+.animate-rotate-border-cw {
+  animation: rotate-border-cw 3s linear infinite;
+}
+
+.animate-rotate-border-ccw {
+  animation: rotate-border-ccw 3s linear infinite;
+}
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
+
+@utility no-scrollbar {
+  &::-webkit-scrollbar {
     display: none;
   }
-  
-  .no-scrollbar {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
 
-  .scrollbar-custom::-webkit-scrollbar {
+@utility scrollbar-custom {
+  &::-webkit-scrollbar {
     width: 8px;
     height: 8px;
   }
 
-  .scrollbar-custom::-webkit-scrollbar-track {
+  &::-webkit-scrollbar-track {
     background: rgba(125, 125, 125, 0.1);
   }
 
-  .scrollbar-custom::-webkit-scrollbar-thumb {
+  &::-webkit-scrollbar-thumb {
     background-color: #243145; /* Tailwind's blue-500 */
     border-radius: 9999px;
   }
+}
+
+@utility animate-blob1 {
+  animation: blob1 13s infinite cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+@utility animate-blob2 {
+  animation: blob2 18s infinite cubic-bezier(0.45, 0.05, 0.55, 0.95);
+  animation-delay: 1.2s;
+}
+
+@utility animate-blob3 {
+  animation: blob3 15s infinite cubic-bezier(0.47, 0, 0.745, 0.715);
+  animation-delay: 2.4s;
+}
+
+@utility animate-blob4 {
+  animation: blob4 19s infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  animation-delay: 0.6s;
+}
+
+@utility animate-blob5 {
+  animation: blob5 17s infinite cubic-bezier(0.25, 0.1, 0.25, 1);
+  animation-delay: 3.1s;
+}
+
+@utility animate-blob6 {
+  animation: blob6 14s infinite cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  animation-delay: 2.9s;
+}
+
+@layer utilities {
   @keyframes blob1 {
     0%   { transform: translate(0px, 0px); }
     20%  { transform: translate(180px, -130px); }
@@ -71,34 +154,5 @@
     55%  { transform: translate(120px, -150px); }
     85%  { transform: translate(-115px, 125px); }
     100% { transform: translate(0px, 0px); }
-  }
-
-  .animate-blob1 {
-    animation: blob1 13s infinite cubic-bezier(0.39, 0.575, 0.565, 1);
-  }
-
-  .animate-blob2 {
-    animation: blob2 18s infinite cubic-bezier(0.45, 0.05, 0.55, 0.95);
-    animation-delay: 1.2s;
-  }
-
-  .animate-blob3 {
-    animation: blob3 15s infinite cubic-bezier(0.47, 0, 0.745, 0.715);
-    animation-delay: 2.4s;
-  }
-
-  .animate-blob4 {
-    animation: blob4 19s infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
-    animation-delay: 0.6s;
-  }
-
-  .animate-blob5 {
-    animation: blob5 17s infinite cubic-bezier(0.25, 0.1, 0.25, 1);
-    animation-delay: 3.1s;
-  }
-
-  .animate-blob6 {
-    animation: blob6 14s infinite cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    animation-delay: 2.9s;
   }
 }
