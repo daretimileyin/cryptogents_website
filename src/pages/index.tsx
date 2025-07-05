@@ -17,35 +17,35 @@ import { VideoCarousel } from "../components/VideoCarousel";
 import { CommunityCarousel } from "../components/CommunityCarousel";
 
 // Animation variants
-const fadeInUp = {
-  initial: { opacity: 0, y: 60 },
-  animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.6, ease: "easeOut" }
-};
+// const fadeInUp = {
+//   initial: { opacity: 0, y: 60 },
+//   animate: { opacity: 1, y: 0 },
+//   transition: { duration: 0.6, ease: "easeOut" }
+// };
 
-const fadeIn = {
-  initial: { opacity: 0 },
-  animate: { opacity: 1 },
-  transition: { duration: 0.8, ease: "easeOut" }
-};
+// const fadeIn = {
+//   initial: { opacity: 0 },
+//   animate: { opacity: 1 },
+//   transition: { duration: 0.8, ease: "easeOut" }
+// };
 
-const slideInLeft = {
-  initial: { opacity: 0, x: -60 },
-  animate: { opacity: 1, x: 0 },
-  transition: { duration: 0.7, ease: "easeOut" }
-};
+// const slideInLeft = {
+//   initial: { opacity: 0, x: -60 },
+//   animate: { opacity: 1, x: 0 },
+//   transition: { duration: 0.7, ease: "easeOut" }
+// };
 
-const slideInRight = {
-  initial: { opacity: 0, x: 60 },
-  animate: { opacity: 1, x: 0 },
-  transition: { duration: 0.7, ease: "easeOut" }
-};
+// const slideInRight = {
+//   initial: { opacity: 0, x: 60 },
+//   animate: { opacity: 1, x: 0 },
+//   transition: { duration: 0.7, ease: "easeOut" }
+// };
 
-const scaleIn = {
-  initial: { opacity: 0, scale: 0.8 },
-  animate: { opacity: 1, scale: 1 },
-  transition: { duration: 0.6, ease: "easeOut" }
-};
+// const scaleIn = {
+//   initial: { opacity: 0, scale: 0.8 },
+//   animate: { opacity: 1, scale: 1 },
+//   transition: { duration: 0.6, ease: "easeOut" }
+// };
 
 const staggerContainer = {
   animate: {
@@ -287,7 +287,7 @@ const Index = () => {
                 <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle,at_center,#22c55e_60%,white_100%)]"></div>
 
                 {/* List Items */}
-                {[1, 2, 3].map((item, index) => (
+                {[1, 2, 3].map((_, index) => (
                   <motion.li 
                     key={index}
                     className="flex gap-4 items-center p-4 border border-gray-200 rounded-2xl backdrop-blur-xs"
@@ -355,7 +355,7 @@ const Index = () => {
                   whileInView="animate"
                   viewport={{ once: true }}
                 >
-                  {[1, 2, 3, 4].map((item, index) => (
+                  {[1, 2, 3, 4].map((_, index) => (
                     <motion.li 
                       key={index}
                       className="flex items-center gap-2"
@@ -390,7 +390,7 @@ const Index = () => {
                   whileInView="animate"
                   viewport={{ once: true }}
                 >
-                  {[1, 2, 3, 4].map((item, index) => (
+                  {[1, 2, 3, 4].map((_, index) => (
                     <motion.li 
                       key={index}
                       className="flex items-center gap-2"
