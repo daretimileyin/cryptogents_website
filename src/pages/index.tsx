@@ -39,42 +39,12 @@ const Index = () => {
       <div className="fixed inset-0 z-0 pointer-events-none">
         {/* Blobs */}
         <div className="flex items-center justify-center w-full h-full">
-          <motion.div 
-            className="lg:w-96 aspect-square blur-[120px] opacity-70 rounded-full animate-blob1 bg-linear-to-br from-gray-300 to-gray-600"
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 0.7, scale: 1 }}
-            transition={{ duration: 2, ease: "easeOut" }}
-          />
-          <motion.div 
-            className="lg:w-96 aspect-square blur-[120px] opacity-70 rounded-full animate-blob2 bg-linear-to-br from-slate-500 to-gray-800"
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 0.7, scale: 1 }}
-            transition={{ duration: 2, delay: 0.2, ease: "easeOut" }}
-          />
-          <motion.div 
-            className="lg:w-96 aspect-square blur-[120px] opacity-70 rounded-full animate-blob3 bg-linear-to-br from-slate-400 to-slate-700"
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 0.7, scale: 1 }}
-            transition={{ duration: 2, delay: 0.4, ease: "easeOut" }}
-          />
-          <motion.div 
-            className="lg:w-96 aspect-square blur-[120px] opacity-70 rounded-full animate-blob4 bg-linear-to-br from-gray-200 to-slate-400"
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 0.7, scale: 1 }}
-            transition={{ duration: 2, delay: 0.6, ease: "easeOut" }}
-          />
-          <motion.div 
-            className="lg:w-96 aspect-square blur-[120px] opacity-70 rounded-full animate-blob5 bg-linear-to-br from-gray-800 to-blue-400"
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 0.7, scale: 1 }}
-            transition={{ duration: 2, delay: 0.8, ease: "easeOut" }}
-          />
-          <motion.div 
-            className="lg:w-96 aspect-square blur-[120px] opacity-70 rounded-full animate-blob6 bg-linear-to-br from-gray-500 to-slate-500"
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 0.7, scale: 1 }}
-            transition={{ duration: 2, delay: 1, ease: "easeOut" }}
-          />
+          <div className="lg:w-96 aspect-square blur-[120px] opacity-70 rounded-full animate-blob1 bg-linear-to-br from-gray-300 to-gray-600" />
+          <div className="lg:w-96 aspect-square blur-[120px] opacity-70 rounded-full animate-blob2 bg-linear-to-br from-slate-500 to-gray-800" />
+          <div className="lg:w-96 aspect-square blur-[120px] opacity-70 rounded-full animate-blob3 bg-linear-to-br from-slate-400 to-slate-700" />
+          <div className="lg:w-96 aspect-square blur-[120px] opacity-70 rounded-full animate-blob4 bg-linear-to-br from-gray-200 to-slate-400" />
+          <div className="lg:w-96 aspect-square blur-[120px] opacity-70 rounded-full animate-blob5 bg-linear-to-br from-gray-800 to-blue-400" />
+          <div className="lg:w-96 aspect-square blur-[120px] opacity-70 rounded-full animate-blob6 bg-linear-to-br from-gray-500 to-slate-500" />
         </div>
 
         {/* Noise Overlay */}

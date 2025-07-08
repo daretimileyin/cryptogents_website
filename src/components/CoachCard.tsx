@@ -10,10 +10,10 @@ interface CoachCardProps{
 
 const CoachCard = ({content , safeHTML, isLast, isOdd}: CoachCardProps) => {
     const [readMore, setReadMore] = useState(false);
-  return (
+    return (
     <div
         className={`relative rounded-2xl bg-black border border-gray-400 overflow-hidden ${
-            isLast && isOdd ? 'lg:col-span-2 lg:mx-auto w-4/5 max-w-xl' : ''
+            isLast && isOdd ? 'lg:col-span-2 lg:mx-auto lg:w-4/5 max-w-xl' : ''
         }`}
     >
         <div className="w-full h-[350px]">
@@ -24,7 +24,7 @@ const CoachCard = ({content , safeHTML, isLast, isOdd}: CoachCardProps) => {
             {content.coach}
             </h5>
         </div>
-        <div className="p-6 space-y-2">
+        <div className="p-2 lg:p-6 space-y-2">
             <div className="flex flex-wrap items-center justify-center gap-2">
             {content.keywords.map((item: string, index: number) => {
                 const isEven = index % 2 === 0;
@@ -54,7 +54,7 @@ const CoachCard = ({content , safeHTML, isLast, isOdd}: CoachCardProps) => {
             </div>
         </div>
     </div>
-  )
+    )
 }
 
 export default CoachCard
