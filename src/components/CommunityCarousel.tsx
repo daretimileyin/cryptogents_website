@@ -9,15 +9,19 @@ export const CommunityCarousel = () => {
     const carouselRef = useRef<HTMLDivElement>(null);
 
     const scroll = (direction: "left" | "right") => {
-        if (!carouselRef.current) return;
-        const container = carouselRef.current;
-        const scrollAmount = container.offsetWidth * 0.8;
+      if (!carouselRef.current) return;
+      const container = carouselRef.current;
 
-        container.scrollBy({
-        left: direction === "left" ? -scrollAmount : scrollAmount,
+      const card = container.querySelector("div");
+      if (!card) return;
+
+      const cardWidth = (card as HTMLElement).offsetWidth + 32; // 32 = gap-8 (8 * 4)
+      container.scrollBy({
+        left: direction === "left" ? -cardWidth : cardWidth,
         behavior: "smooth",
-        });
+      });
     };
+
 
     return (
         <div id="community" className="py-12 space-y-8">

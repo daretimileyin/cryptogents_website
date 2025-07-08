@@ -1,3 +1,6 @@
+import { ArrowDown, ArrowUp } from "lucide-react";
+import { useState } from "react";
+
 interface CoachCardProps{
     content: any;
     safeHTML: string;
@@ -6,14 +9,15 @@ interface CoachCardProps{
 }
 
 const CoachCard = ({content , safeHTML, isLast, isOdd}: CoachCardProps) => {
+    const [readMore, setReadMore] = useState(false);
   return (
     <div
         className={`relative rounded-2xl bg-black border border-gray-400 overflow-hidden ${
-            isLast && isOdd ? 'lg:col-span-2 lg:mx-auto lg:w-1/2' : ''
+            isLast && isOdd ? 'lg:col-span-2 lg:mx-auto w-4/5 max-w-xl' : ''
         }`}
     >
-        <div>
-            <img srcSet={content.srcSet} src={content.src} />
+        <div className="w-full h-[350px]">
+            <img className="size-full object-cover" srcSet={content.srcSet} src={content.src} />
         </div>
         <div className="pt-4">
             <h5 className="text-white text-center text-2xl lg:text-3xl font-semibold">
@@ -42,10 +46,11 @@ const CoachCard = ({content , safeHTML, isLast, isOdd}: CoachCardProps) => {
             })}
             </div>
             <div className="py-2 space-y-4">
-            <p 
-                className="text-gray-400 text-center text-lg"
-                dangerouslySetInnerHTML={{ __html: safeHTML }}
-            />
+                <p 
+                    className={`text-gray-400 text-center text-lg ${!readMore ? 'line-clamp-[8]' : ''}`}
+                    dangerouslySetInnerHTML={{ __html: safeHTML }}
+                />
+                <span className="text-white text-sm hover:text-white/50 cursor-pointer text-center flex justify-center items-center gap-1 transition duration-300 ease-in-out" onClick ={() => setReadMore(!readMore)}>{!readMore ? (<>Read more <ArrowDown size={18} /></>) : (<>Less <ArrowUp size={18} /></>)}</span>
             </div>
         </div>
     </div>

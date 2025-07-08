@@ -15,6 +15,7 @@ import CoachCard from "../components/CoachCard";
 import { DropDownTab } from "../components/DropDownTab";
 import { VideoCarousel } from "../components/VideoCarousel";
 import { CommunityCarousel } from "../components/CommunityCarousel";
+import { ExtraCard } from "../components/ExtraCard";
 
 
 const staggerContainer = {
@@ -247,31 +248,7 @@ const Index = () => {
                 Here's what you'll discover inside this training...
               </motion.h3>
               
-              <motion.ul 
-                className="relative flex flex-col lg:flex-row gap-4 lg:gap-12 items-center justify-between"
-                variants={staggerContainer}
-                initial="initial"
-                animate="animate"
-              >
-                {/* Radial Gradient Background */}
-                <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle,at_center,#22c55e_60%,white_100%)]"></div>
-
-                {/* List Items */}
-                {[1, 2, 3].map((_, index) => (
-                  <motion.li 
-                    key={index}
-                    className="flex gap-4 items-center p-4 border border-gray-200 rounded-2xl backdrop-blur-xs"
-                    variants={staggerItem}
-                    whileHover={{ scale: 1.02, y: -5 }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    <Check className="text-green-600 w-16" />
-                    <p className="text-[1.13rem] lg:text-lg leading-tight font-medium">
-                      The #1 reason why sales reps fail to close consistently and how you can fix it in days.
-                    </p>
-                  </motion.li>
-                ))}
-              </motion.ul>
+              <ExtraCard/>
             </motion.div>
           </div>
         </div>
@@ -354,7 +331,7 @@ const Index = () => {
                   <h3 className="text-2xl font-bold">A Sales.io Mentee</h3>
                 </div>
                 <motion.ul 
-                  className="space-y-2 border p-6 rounded-xl"
+                  className="relative space-y-2 border p-6 rounded-xl overflow-hidden"
                   variants={staggerContainer}
                   initial="initial"
                   whileInView="animate"
@@ -375,6 +352,8 @@ const Index = () => {
                       </p>
                     </motion.li>
                   ))}
+
+                  <div className="absolute -top-8 -right-8 -z-10 blur-xl bg-[#8E44AD]/50 w-25 aspect-square"></div>
                 </motion.ul>
               </motion.div>
             </div>
@@ -463,16 +442,27 @@ const Index = () => {
              viewport={{ once: true }}
            >
               {CoachContent.map((content, index) => {
-                const isLast = index === CoachContent.length - 1;
-                const isOdd = CoachContent.length % 2 !== 0;
-                const safeHTML = DOMPurify.sanitize(content.para);
+                  const isLast = index === CoachContent.length - 1;
+                  const isOdd = CoachContent.length % 2 !== 0;
+                  const safeHTML = DOMPurify.sanitize(content.para);
 
-                return (
-                  <motion.div key={index} variants={staggerItem}>
-                    <CoachCard content={content} safeHTML={safeHTML} isLast={isLast} isOdd={isOdd}/>
-                  </motion.div>
-                );
-              })}
+                  return (
+                    <motion.div
+                      key={index}
+                      variants={staggerItem}
+                      className={isLast && isOdd ? "lg:col-span-2 flex justify-center" : ""}
+                    >
+                      <div className={isLast && isOdd ? "w-full max-w-xl" : ""}>
+                        <CoachCard
+                          content={content}
+                          safeHTML={safeHTML}
+                          isLast={isLast}
+                          isOdd={isOdd}
+                        />
+                      </div>
+                    </motion.div>
+                  );
+                })}
             </motion.div>
           </motion.div>
 

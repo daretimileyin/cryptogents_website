@@ -34,41 +34,41 @@ export const TopTrainingContent = [
         id: 1,
         srcSet: "https://framerusercontent.com/images/k3xNuNLbHEgORooIxbn3RReUI.png?scale-down-to=512 512w,https://framerusercontent.com/images/k3xNuNLbHEgORooIxbn3RReUI.png 1024w",
         src: "https://framerusercontent.com/images/k3xNuNLbHEgORooIxbn3RReUI.png",
-        tag: "Job Sourcing & Placement",
-        header: "Placement in a Top 1% Sales Role",
-        para: "We don’t just train you - we place you. With 15+ elite companies hiring every month, you’ll get direct access to exclusive high-ticket roles."
+        tag: "Market Mastery & Psychology",
+        header: "Forge Market Avatars ",
+        para: "We forge market avatars who bend the market rather than get bent by it. Develop the mental fortitude and strategic thinking to thrive in any condition."
     },
     {
         id: 2,
         srcSet: "https://framerusercontent.com/images/k3xNuNLbHEgORooIxbn3RReUI.png?scale-down-to=512 512w,https://framerusercontent.com/images/k3xNuNLbHEgORooIxbn3RReUI.png 1024w",
         src: "https://framerusercontent.com/images/k3xNuNLbHEgORooIxbn3RReUI.png",
-        tag: "Job Sourcing & Placement",
-        header: "Placement in a Top 1% Sales Role",
-        para: "We don’t just train you - we place you. With 15+ elite companies hiring every month, you’ll get direct access to exclusive high-ticket roles."
+        tag: "Complete Trader Development ",
+        header: "Master Trading Intangibles",
+        para: "Success goes beyond technical analysis. We provide the intangible skills that separate profitable traders—psychological edge, risk management, and winning mindset."
     },
     {
         id: 3,
         srcSet: "https://framerusercontent.com/images/k3xNuNLbHEgORooIxbn3RReUI.png?scale-down-to=512 512w,https://framerusercontent.com/images/k3xNuNLbHEgORooIxbn3RReUI.png 1024w",
         src: "https://framerusercontent.com/images/k3xNuNLbHEgORooIxbn3RReUI.png",
-        tag: "Job Sourcing & Placement",
-        header: "Placement in a Top 1% Sales Role",
-        para: "We don’t just train you - we place you. With 15+ elite companies hiring every month, you’ll get direct access to exclusive high-ticket roles."
+        tag: "Adaptive Systems Vault",
+        header: "Scalable Trading Systems",
+        para: "Our curated systems adapt to any market condition. Whether trending, ranging, or volatile, our methods evolve to keep you profitable across all cycles."
     },
     {
         id: 4,
         srcSet: "https://framerusercontent.com/images/k3xNuNLbHEgORooIxbn3RReUI.png?scale-down-to=512 512w,https://framerusercontent.com/images/k3xNuNLbHEgORooIxbn3RReUI.png 1024w",
         src: "https://framerusercontent.com/images/k3xNuNLbHEgORooIxbn3RReUI.png",
-        tag: "Job Sourcing & Placement",
-        header: "Placement in a Top 1% Sales Role",
-        para: "We don’t just train you - we place you. With 15+ elite companies hiring every month, you’ll get direct access to exclusive high-ticket roles."
+        tag: "Elite Trader Access",
+        header: "Insider Trading Wisdom",
+        para: "Direct access to seasoned traders sharing insights nobody talks about—their real concerns, beliefs, and approaches that only market veterans provide."
     },
     {
         id: 5,
         srcSet: "https://framerusercontent.com/images/k3xNuNLbHEgORooIxbn3RReUI.png?scale-down-to=512 512w,https://framerusercontent.com/images/k3xNuNLbHEgORooIxbn3RReUI.png 1024w",
         src: "https://framerusercontent.com/images/k3xNuNLbHEgORooIxbn3RReUI.png",
-        tag: "Job Sourcing & Placement",
-        header: "Placement in a Top 1% Sales Role",
-        para: "We don’t just train you - we place you. With 15+ elite companies hiring every month, you’ll get direct access to exclusive high-ticket roles."
+        tag: "Mentorship & Support ",
+        header: "Learning by Osmosis",
+        para: "Hands-on mentorship with profitable traders. Absorb winning systems, mindset, and character traits, plus analytical support including signals and guidance."
     },
 ]
 
@@ -77,35 +77,26 @@ export const CoachContent = [
         id: 1,
         srcSet: "https://framerusercontent.com/images/gsue2q9Wt2HDoLSjdw1L4LWrHP8.jpg?scale-down-to=512 512w,https://framerusercontent.com/images/gsue2q9Wt2HDoLSjdw1L4LWrHP8.jpg?scale-down-to=1024 1024w,https://framerusercontent.com/images/gsue2q9Wt2HDoLSjdw1L4LWrHP8.jpg?scale-down-to=2048 2048w,https://framerusercontent.com/images/gsue2q9Wt2HDoLSjdw1L4LWrHP8.jpg 3088w",
         src: "https://framerusercontent.com/images/gsue2q9Wt2HDoLSjdw1L4LWrHP8.jpg",
-        keywords: ["B2C", "Career Growth", "Management", "B2B", "Object Handling"], 
-        coach: "Founder: JJ Hernandez",
-        para: "JJ is a seasoned closer and sales leader who’s helped generate millions in revenue. He’s trained reps, led teams, and built sales machines from the ground up—working under names like Alex Hormozi and Iman Gadzhi. He’s also consulted for top creators like Daniel Iles and Roslan Bendenia, Ashton Hall and more helping them scale fast and sell with confidence."
+        keywords: ["Institutional Analysis", "Price Action Expert", "Liquidity Hunter", "Futures Specialist", "Contrarian Trading"], 
+        coach: "Mike",
+        para: "Mike is a 6-year futures trader specializing in price action and institutional-level analysis. He focuses on support/resistance, demand/supply zones, and Fibonacci levels while targeting liquidity traps where retail traders get caught. His edge comes from thinking like the institutions—trading against the crowd when they're most vulnerable."
     },
     {
         id: 2,
         srcSet: "https://framerusercontent.com/images/W7MsLgM9zqeXPdLwHnP2frW9uw.jpg?scale-down-to=512 512w,https://framerusercontent.com/images/W7MsLgM9zqeXPdLwHnP2frW9uw.jpg?scale-down-to=1024 1024w,https://framerusercontent.com/images/W7MsLgM9zqeXPdLwHnP2frW9uw.jpg?scale-down-to=2048 2048w,https://framerusercontent.com/images/W7MsLgM9zqeXPdLwHnP2frW9uw.jpg?scale-down-to=4096 4096w,https://framerusercontent.com/images/W7MsLgM9zqeXPdLwHnP2frW9uw.jpg 6000w",
         src: "https://framerusercontent.com/images/W7MsLgM9zqeXPdLwHnP2frW9uw.jpg",
-        keywords: ["B2C", "Career Growth", "Management", "B2B", "Object Handling"], 
-        coach: "Coach: Scott Brunning",
-        para: "<strong>Scott Brunning is a high-performance sales coach and sales manager who’s personally closed over $3M in revenue, including singular deals of up to $104,000, and managed teams doing $10M annually.</strong><br/>Scott built his reputation working alongside top industry names like Iman Gadzhi, and managing sales teams across multiple seven and eight-figure offers. "
+        keywords: ["Crpto Specialist", "Multi-Timeframe", "System Developer", "Mentorship Graduate", "Adaptive Strategies"], 
+        coach: "Anthony",
+        para: "Anthony is a 21-year-old trader who entered the markets in 2021 and has maintained profitability for over 2 years. Having studied under seven different mentors, he's developed a unique approach that combines the best elements from each.<br /> His expertise spans the full spectrum of market analysis—from supply/demand zones and retail patterns to advanced smart money concepts and liquidity strategies. This comprehensive skillset allows him to develop effective trading systems across all timeframes, from day trading to long-term investing, with a particular focus on cryptocurrency markets.",
     },
     {
         id: 3,
         srcSet: "https://framerusercontent.com/images/cvJAEnJJ7QESBRU1mddYLzMOGeo.jpg?scale-down-to=512 512w,https://framerusercontent.com/images/cvJAEnJJ7QESBRU1mddYLzMOGeo.jpg 1000w",
         src: "https://framerusercontent.com/images/cvJAEnJJ7QESBRU1mddYLzMOGeo.jpg",
-        keywords: ["B2C", "Career Growth", "Management", "B2B", "Object Handling"], 
-        coach: "Coach: Cole Verbeek",
-        para: "Cole Verbeek is a high-performance closer who blends sharp sales instincts with deep psychological insight. He went from selling knives door-to-door to upselling at North America’s largest jewelry store, then launched a wellness agency at 19 and scaled it to $20K/month. Dropping out of marketing school, he doubled down on real-world learning—later joining Iman Gadzhi’s team to train setters and optimize sales systems. Now at Wing Girl Method, Cole’s closed over $850K in revenue and averages $500+ CCPL. He doesn’t just sell—he studies what makes people buy, trust, and transform."
-    },
-    {
-        id: 4,
-        srcSet: "https://framerusercontent.com/images/BbOowqb0hzDx5zpUQzIoY0Mw.jpeg?scale-down-to=512 512w,https://framerusercontent.com/images/BbOowqb0hzDx5zpUQzIoY0Mw.jpeg?scale-down-to=1024 1024w,https://framerusercontent.com/images/BbOowqb0hzDx5zpUQzIoY0Mw.jpeg?scale-down-to=2048 2048w,https://framerusercontent.com/images/BbOowqb0hzDx5zpUQzIoY0Mw.jpeg 2444w",
-        src: "https://framerusercontent.com/images/BbOowqb0hzDx5zpUQzIoY0Mw.jpeg",
-        keywords: ["B2C", "Career Growth", "Management", "B2B", "Object Handling"], 
-        coach: "Coach: Scott Brunning",
-        para: "<strong>Scott Brunning is a high-performance sales coach and sales manager who’s personally closed over $3M in revenue, including singular deals of up to $104,000, and managed teams doing $10M annually.</strong><br/>Scott built his reputation working alongside top industry names like Iman Gadzhi, and managing sales teams across multiple seven and eight-figure offers. "
-    },
-
+        keywords: ["Supply/Demand Expert", "Price Action Master", "Proven Mentor", "High Win Rate", "Admin Level"], 
+        coach: "Hodge",
+        para: "Hodge brings 6-7 years of price action trading expertise, specializing in supply and demand strategies combined with proven indicators. He trades both spot and futures markets with exceptional precision.<br /> Starting as a paying member of a trading group, Hodge quickly achieved profitability and began sharing high-success setups. His consistent performance earned him a promotion to the admin team, where he now mentors traders, transforming consistent losers into steady winners.<br /> His proven track record of guiding struggling traders to profitability demonstrates his ability to teach both technical skills and the winning mindset required for market success."
+    }
 ]
 
 export const faqContent = [
