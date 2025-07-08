@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import noise from "../assets/noise.png";
-import logo from "../assets/logo.png";
+import logo from "../assets/cg_logo.webp";
 import avatar from "../assets/9662.webp";
 import avatar2 from "../assets/people_2.webp"
 import avatar3 from "../assets/people_3.webp"
