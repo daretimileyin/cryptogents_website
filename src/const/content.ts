@@ -40,8 +40,8 @@ export const TopTrainingContent = [
     },
     {
         id: 2,
-        srcSet: "https://framerusercontent.com/images/k3xNuNLbHEgORooIxbn3RReUI.png?scale-down-to=512 512w,https://framerusercontent.com/images/k3xNuNLbHEgORooIxbn3RReUI.png 1024w",
-        src: "https://framerusercontent.com/images/k3xNuNLbHEgORooIxbn3RReUI.png",
+        srcSet: "https://framerusercontent.com/images/BUdifDpcysVdyaHmuZdTcx75RP0.png?scale-down-to=512 512w,https://framerusercontent.com/images/BUdifDpcysVdyaHmuZdTcx75RP0.png 1024w",
+        src: "https://framerusercontent.com/images/BUdifDpcysVdyaHmuZdTcx75RP0.png",
         tag: "Complete Trader Development ",
         header: "Master Trading Intangibles",
         para: "Success goes beyond technical analysis. We provide the intangible skills that separate profitable traders—psychological edge, risk management, and winning mindset."
@@ -56,8 +56,8 @@ export const TopTrainingContent = [
     },
     {
         id: 4,
-        srcSet: "https://framerusercontent.com/images/k3xNuNLbHEgORooIxbn3RReUI.png?scale-down-to=512 512w,https://framerusercontent.com/images/k3xNuNLbHEgORooIxbn3RReUI.png 1024w",
-        src: "https://framerusercontent.com/images/k3xNuNLbHEgORooIxbn3RReUI.png",
+        srcSet: "https://framerusercontent.com/images/LnphBHnZ87N9VDL2G73es7yRNg.png?scale-down-to=512 512w,https://framerusercontent.com/images/LnphBHnZ87N9VDL2G73es7yRNg.png 1024w",
+        src: "https://framerusercontent.com/images/LnphBHnZ87N9VDL2G73es7yRNg.png",
         tag: "Elite Trader Access",
         header: "Insider Trading Wisdom",
         para: "Direct access to seasoned traders sharing insights nobody talks about—their real concerns, beliefs, and approaches that only market veterans provide."

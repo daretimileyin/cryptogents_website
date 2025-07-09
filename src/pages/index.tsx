@@ -14,7 +14,7 @@ import DescHeader from "../components/DescHeader";
 import DOMPurify from 'dompurify';
 import CoachCard from "../components/CoachCard";
 import { DropDownTab } from "../components/DropDownTab";
-import { VideoCarousel } from "../components/VideoCarousel";
+// import { VideoCarousel } from "../components/VideoCarousel";
 import { CommunityCarousel } from "../components/CommunityCarousel";
 import { ExtraCard } from "../components/ExtraCard";
 
@@ -35,17 +35,17 @@ const staggerItem = {
 
 const Index = () => {
   return (
-    <div className="relative bg-black overflow-x-hidden">
+    <div className="relative bg-black overflow-y-hidden">
       {/* 🔵 STATIC BACKGROUND (Blobs + Noise) */}
       <div className="fixed w-full h-full inset-0 z-0 pointer-events-none">
         {/* Blobs */}
         <div className="flex items-center justify-center w-full h-full">
-          <div className="lg:w-96 aspect-square blur-[120px] opacity-70 rounded-full animate-blob1 bg-linear-to-br from-gray-300 to-[#8E44AD]" />
-          <div className="lg:w-96 aspect-square blur-[120px] opacity-70 rounded-full animate-blob2 bg-linear-to-br from-slate-500 to-gray-800" />
-          <div className="lg:w-96 aspect-square blur-[120px] opacity-70 rounded-full animate-blob3 bg-linear-to-br from-slate-400 to-slate-700" />
-          <div className="lg:w-96 aspect-square blur-[120px] opacity-70 rounded-full animate-blob4 bg-linear-to-br from-gray-200 to-slate-400" />
-          <div className="lg:w-96 aspect-square blur-[120px] opacity-70 rounded-full animate-blob5 bg-linear-to-br from-gray-800 to-[#8E44AD]" />
-          <div className="lg:w-96 aspect-square blur-[120px] opacity-70 rounded-full animate-blob6 bg-linear-to-br from-gray-500 to-slate-500" />
+          <div className="w-[900px] lg:w-96 aspect-square blur-[50px] lg:blur-[120px] opacity-80 rounded-full animate-blob1 bg-linear-to-br from-gray-300 to-[#8E44AD]" />
+          <div className="w-[900px] lg:w-96 aspect-square blur-[50px] lg:blur-[120px] opacity-80 rounded-full animate-blob2 bg-linear-to-br from-slate-500 to-gray-800" />
+          <div className="w-[900px] lg:w-96 aspect-square blur-[50px] lg:blur-[120px] opacity-80 rounded-full animate-blob3 bg-linear-to-br from-slate-400 to-slate-700" />
+          <div className="w-[900px] lg:w-96 aspect-square blur-[50px] lg:blur-[120px] opacity-80 rounded-full animate-blob4 bg-linear-to-br from-gray-200 to-slate-400" />
+          <div className="w-[900px] lg:w-96 aspect-square blur-[50px] lg:blur-[120px] opacity-80 rounded-full animate-blob5 bg-linear-to-br from-gray-800 to-[#8E44AD]" />
+          <div className="w-[900px] lg:w-96 aspect-square blur-[50px] lg:blur-[120px] opacity-80 rounded-full animate-blob6 bg-linear-to-br from-gray-500 to-slate-500" />
         </div>
 
         {/* Noise Overlay */}
@@ -56,7 +56,7 @@ const Index = () => {
       </div>
 
       {/* 🔝 Sticky Nav + Content */}
-      <div className="relative z-50">
+      <div className="relative z-50 overflow-hidden">
         {/* Sticky Navbar */}
         <motion.div 
           className="fixed w-full top-0 z-50 backdrop-blur-md bg-linear-to-b from-black/70 to-transparent"
@@ -226,14 +226,15 @@ const Index = () => {
 
         <main className="w-[90%] lg:w-[60%] mx-auto pb-16 ">
           {/* Video Testimonial */}
-          <motion.div
+          {/* <motion.div
+            className="overflow-y-hidden"
             initial={{ opacity: 0, y: 60 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
             <VideoCarousel />
-          </motion.div>
+          </motion.div> */}
 
           {/* Insight Section */}
           <motion.div 
