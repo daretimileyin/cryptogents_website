@@ -1,6 +1,6 @@
 const VideoCard = ({ content }: any) => {
   return (
-    <div className="min-w-full w-full lg:min-w-[35%] snap-start border border-gray-500 rounded-2xl overflow-hidden">
+    <div className="min-w-full w-full lg:min-w-[32%] snap-start border border-gray-500 rounded-2xl overflow-hidden">
       <div className="w-full h-[450px]">
         <video
           className="w-full h-full object-cover"

@@ -13,7 +13,7 @@ export const VideoCarousel = () => {
         const card = container.querySelector('div'); // the first card
         if (!card) return;
 
-        const cardWidth = (card as HTMLElement).offsetWidth + 32; // 32px = 8 * 4 (gap-8)
+        const cardWidth = (card as HTMLElement).offsetWidth + 8; // 32px = 2 * 4 (gap-2)
         container.scrollBy({
             left: direction === "left" ? -cardWidth : cardWidth,
             behavior: "smooth",
@@ -59,7 +59,7 @@ export const VideoCarousel = () => {
                 {/* Scrollable Video Cards */}
                 <div
                     ref={carouselRef}
-                    className="flex overflow-x-auto scroll-smooth no-scrollbar gap-8 snap-x snap-mandatory"
+                    className="flex overflow-x-auto scroll-smooth no-scrollbar gap-4 snap-x snap-mandatory"
                 >
                     {videoContent.map((content, index) => (
                         <VideoCard key={index} content={content} />

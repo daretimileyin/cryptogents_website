@@ -14,7 +14,7 @@ const CallCTA = ({ className }: CallCTAProps) => {
         className
       )}
     >
-      Book a Call <ArrowUpRight />
+      Join us Now <ArrowUpRight />
     </button>
   );
 };

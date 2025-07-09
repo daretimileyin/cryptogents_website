@@ -1,5 +1,8 @@
 @import 'tailwindcss';
 
+@theme {
+  --font-body: Inter, sans-serif;
+}
 @property --border-angle {
   syntax: '<angle>';
   inherits: false;

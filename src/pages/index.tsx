@@ -5,7 +5,8 @@ import avatar from "../assets/9662.webp";
 import avatar2 from "../assets/people_2.webp"
 import avatar3 from "../assets/people_3.webp"
 import avatar4 from "../assets/people_4.webp"
-import { ArrowUpRight, Check, Star, X } from "lucide-react";
+import star from "../assets/star.svg"
+import { ArrowUpRight, Check, X } from "lucide-react";
 import HoverGlow from "../components/HoverGlow";
 import {CoachContent, faqContent} from "../const/content";
 import CallCTA from "../components/CallCTA";
@@ -36,20 +37,20 @@ const Index = () => {
   return (
     <div className="relative bg-black overflow-x-hidden">
       {/* 🔵 STATIC BACKGROUND (Blobs + Noise) */}
-      <div className="fixed inset-0 z-0 pointer-events-none">
+      <div className="fixed w-full h-full inset-0 z-0 pointer-events-none">
         {/* Blobs */}
         <div className="flex items-center justify-center w-full h-full">
-          <div className="lg:w-96 aspect-square blur-[120px] opacity-70 rounded-full animate-blob1 bg-linear-to-br from-gray-300 to-gray-600" />
+          <div className="lg:w-96 aspect-square blur-[120px] opacity-70 rounded-full animate-blob1 bg-linear-to-br from-gray-300 to-[#8E44AD]" />
           <div className="lg:w-96 aspect-square blur-[120px] opacity-70 rounded-full animate-blob2 bg-linear-to-br from-slate-500 to-gray-800" />
           <div className="lg:w-96 aspect-square blur-[120px] opacity-70 rounded-full animate-blob3 bg-linear-to-br from-slate-400 to-slate-700" />
           <div className="lg:w-96 aspect-square blur-[120px] opacity-70 rounded-full animate-blob4 bg-linear-to-br from-gray-200 to-slate-400" />
-          <div className="lg:w-96 aspect-square blur-[120px] opacity-70 rounded-full animate-blob5 bg-linear-to-br from-gray-800 to-blue-400" />
+          <div className="lg:w-96 aspect-square blur-[120px] opacity-70 rounded-full animate-blob5 bg-linear-to-br from-gray-800 to-[#8E44AD]" />
           <div className="lg:w-96 aspect-square blur-[120px] opacity-70 rounded-full animate-blob6 bg-linear-to-br from-gray-500 to-slate-500" />
         </div>
 
         {/* Noise Overlay */}
         <div
-          className="absolute inset-0 bg-repeat opacity-5 mix-blend-overlay"
+          className="absolute inset-0 bg-repeat opacity-10 mix-blend-overlay"
           style={{ backgroundImage: `url(${noise})` }}
         ></div>
       </div>
@@ -81,7 +82,7 @@ const Index = () => {
               <a href="#crypto_training" className="hover:opacity-50 hover:text-blue-500 duration-300 ease-in-out">Crypto Training</a>
               <a href="#community" className="hover:opacity-50 hover:text-blue-500 duration-300 ease-in-out">The Community</a>
               <a href="#referral" className="hover:opacity-50 hover:text-blue-500 duration-300 ease-in-out">Trading Referrals</a>
-              <a href="gentlemen" className="hover:opacity-50 hover:text-blue-500 duration-300 ease-in-out">The Gentlemen</a>
+              <a href="#gentlemen" className="hover:opacity-50 hover:text-blue-500 duration-300 ease-in-out">The Gentlemen</a>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
@@ -111,11 +112,11 @@ const Index = () => {
                 animate="animate"
               >
                 {[
-                  { src: avatar, border: "border-yellow-500", left: "left-0" },
+                  { src: avatar, border: "border-[#8E44AD]", left: "left-0" },
                   { src: avatar2, border: "border-green-500", left: "left-6" },
-                  { src: avatar3, border: "border-green-500", left: "left-12" },
+                  { src: avatar3, border: "border-[#8E44AD]", left: "left-12" },
                   { src: avatar, border: "border-green-500", left: "left-16" },
-                  { src: avatar4, border: "border-yellow-500", left: "left-20" }
+                  { src: avatar4, border: "border-[#8E44AD]", left: "left-20" }
                 ].map((item, index) => (
                   <motion.li 
                     key={index}
@@ -141,7 +142,7 @@ const Index = () => {
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.3, delay: 0.6 + i * 0.1 }}
                       >
-                        <Star size={17} />
+                        <img className="w-4 aspect-square" src={star} alt="" />
                       </motion.li>
                     ))}
                 </ul>
@@ -181,7 +182,7 @@ const Index = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <p>Apply Now</p>
+                <p>Join us Now</p>
                 <ArrowUpRight />
               </motion.a>
             </motion.div>
@@ -323,7 +324,7 @@ const Index = () => {
                     </motion.li>
                   ))}
 
-                  <div className="absolute -top-8 -right-8 -z-10 blur-xl bg-[#8E44AD]/50 w-25 aspect-square"></div>
+                  <div className="absolute -top-18 -right-18 -z-10 transform rotate-35 opacity-60  blur-2xl bg-radial from-white to-[#8E44AD] to-55% w-50 aspect-square"></div>
                 </motion.ul>
               </motion.div>
             </div>
@@ -377,7 +378,7 @@ const Index = () => {
 
           {/* Coaches Section */}
           <motion.div 
-            id="coach" 
+            id="gentlemen" 
             className="py-12 space-y-8"
             initial={{ opacity: 0, y: 60 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -405,35 +406,40 @@ const Index = () => {
             </motion.div>
             
            <motion.div 
-             className="grid grid-cols-1 lg:grid-cols-2 gap-8"
-             variants={staggerContainer}
-             initial="initial"
-             whileInView="animate"
-             viewport={{ once: true }}
-           >
+              className="flex flex-wrap items-center gap-8"
+              variants={staggerContainer}
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: true }}
+            >
               {CoachContent.map((content, index) => {
-                  const isLast = index === CoachContent.length - 1;
-                  const isOdd = CoachContent.length % 2 !== 0;
-                  const safeHTML = DOMPurify.sanitize(content.para);
+                const isLast = index === CoachContent.length - 1;
+                const isOdd = CoachContent.length % 2 !== 0;
+                const safeHTML = DOMPurify.sanitize(content.para);
 
-                  return (
-                    <motion.div
-                      key={index}
-                      variants={staggerItem}
-                      className={isLast && isOdd ? "lg:col-span-2 flex justify-center" : ""}
-                    >
-                      <div className={isLast && isOdd ? "w-full max-w-xl" : ""}>
-                        <CoachCard
-                          content={content}
-                          safeHTML={safeHTML}
-                          isLast={isLast}
-                          isOdd={isOdd}
-                        />
-                      </div>
-                    </motion.div>
-                  );
-                })}
+                const isSingleOddLast = isLast && isOdd;
+
+                return (
+                  <motion.div
+                    key={index}
+                    variants={staggerItem}
+                    className={`
+                      basis-full lg:basis-[calc(50%-1rem)] 
+                      ${isSingleOddLast ? "lg:mx-auto" : ""}
+                    `}
+                  >
+                    <CoachCard
+                      content={content}
+                      safeHTML={safeHTML}
+                      index={index}
+                      isLast={isLast}
+                      isOdd={isOdd}
+                    />
+                  </motion.div>
+                );
+              })}
             </motion.div>
+
           </motion.div>
 
           {/* Book a Call Section */}
