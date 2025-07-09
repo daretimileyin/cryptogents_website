@@ -246,7 +246,7 @@ const Index = () => {
                 const safeHTML = DOMPurify.sanitize(content.para);
 
                 return (
-                  <CoachCard key={index} content={content} safeHTML={safeHTML} isLast={isLast} isOdd={isOdd}/>
+                  <CoachCard key={index} index={index} content={content} safeHTML={safeHTML} isLast={isLast} isOdd={isOdd}/>
                 );
               })}
             </div>
