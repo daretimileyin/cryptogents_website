@@ -3,7 +3,7 @@ import { useState } from "react";
 
 interface CoachCardProps{
     content: any;
-    index: number;
+    index?: number;
     safeHTML: string;
     isLast?: boolean;
     isOdd?: boolean;
