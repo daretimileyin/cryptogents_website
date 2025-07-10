@@ -54,10 +54,9 @@ const CoachCard = ({ index, content, safeHTML }: CoachCardProps) => {
         {/* Description */}
         <div className="py-2 space-y-4">
           <p
-            className={`text-gray-400 text-center text-lg ${!readMore ? 'line-clamp-[8]' : ''}`}
+            className={`text-gray-400 text-center text-lg ${!readMore ? 'line-clamp-[4]' : ''}`}
             dangerouslySetInnerHTML={{ __html: safeHTML }}
           />
-          {index !== 0 && (
                 <span
                     className="text-white text-sm hover:text-white/50 cursor-pointer text-center flex justify-center items-center gap-1 transition duration-300 ease-in-out"
                     onClick={() => setReadMore(!readMore)}
@@ -72,7 +71,6 @@ const CoachCard = ({ index, content, safeHTML }: CoachCardProps) => {
                     </>
                     )}
                 </span>
-            )}
 
         </div>
       </div>
