@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 import noise from "../assets/noise.png";
 import logo from "../assets/cg_logo.webp";
-import avatar from "../assets/9662.webp";
-import avatar2 from "../assets/people_2.webp"
-import avatar3 from "../assets/people_3.webp"
-import avatar4 from "../assets/people_4.webp"
+import avatar from "../assets/avatar_1.jpg";
+import avatar2 from "../assets/avatar_2.jpg"
+import avatar3 from "../assets/avatar_3.jpg"
+import avatar4 from "../assets/avatar_3.jpg"
 import star from "../assets/star.svg"
 import { ArrowUpRight, Check, X } from "lucide-react";
 import HoverGlow from "../components/HoverGlow";
@@ -65,14 +65,16 @@ const Index = () => {
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
           <div className="px-4 lg:w-[70%] mx-auto flex flex-row justify-between items-center py-4">
-            <motion.img
-              className="w-16"
-              src={logo}
-              alt="Logo"
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-            />
+            <a href="/">
+              <motion.img
+                className="w-16"
+                src={logo}
+                alt="Logo"
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+              />
+            </a>
             <motion.div
               className="hidden lg:flex flex-row gap-12 text-white text-lg font-medium"
               initial={{ opacity: 0 }}
@@ -609,7 +611,7 @@ const Index = () => {
           {/* FootNote Section */}
           <motion.div
             id="extra"
-            className="py-12 space-y-8"
+            className="relative py-12 space-y-8"
             initial={{ opacity: 0, y: 60 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -656,6 +658,21 @@ const Index = () => {
                 <CallCTA className="mx-auto" />
               </motion.div>
             </motion.div>
+
+            <div className="absolute -bottom-30 left-0 -z-10 w-full">
+              <div className="Glow relative w-56 aspect-square mx-auto">
+                <div className="absolute inset-0 blur-[20px] size-full rounded-[500px] transform ">
+                  <div className="f-blops-1 size-full"></div>
+                </div>
+                <div className="absolute inset-0 blur-2xl size-full rounded-[500px] transform ">
+                  <div className="f-blops-2 size-full"></div>
+                </div>
+                <div className="absolute inset-0 blur-2xl size-full rounded-[500px] transform ">
+                  <div className="f-blops-3 size-full"></div>
+                </div>
+              </div>
+            </div>
+            
           </motion.div>
         </main>
 
@@ -673,6 +690,10 @@ const Index = () => {
             whileInView="animate"
             viewport={{ once: true }}
           >
+            <div className="w-fit flex gap-4 items-center mx-auto">
+              <img src={logo} className="w-16"/>
+              <p className="text-white text-2xl font-medium">Cryptogent</p>
+            </div>
             <motion.div className="space-y-4" variants={staggerContainer}>
               <motion.p variants={staggerItem}>
                 Copyright © 2025 Cryptogents.io. All Rights Reserved.
