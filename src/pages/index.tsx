@@ -203,7 +203,8 @@ const Index = () => {
               </motion.p>
 
               <motion.a
-                href="/"
+                href="https://t.me/CryptoGentsFree_Bot"
+                target="_blank"
                 className="inline-flex w-full lg:w-fit items-center justify-center px-12 py-2 lg:py-3 rounded-md gap-2 bg-white font-semibold text-lg text-black"
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
