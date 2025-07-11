@@ -514,7 +514,6 @@ const Index = () => {
                     <CoachCard
                       content={content}
                       safeHTML={safeHTML}
-                      index={index}
                       isLast={isLast}
                       isOdd={isOdd}
                     />

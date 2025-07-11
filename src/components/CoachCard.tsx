@@ -9,7 +9,7 @@ interface CoachCardProps{
     isOdd?: boolean;
 }
 
-const CoachCard = ({ index, content, safeHTML }: CoachCardProps) => {
+const CoachCard = ({ content, safeHTML }: CoachCardProps) => {
   const [readMore, setReadMore] = useState(false);
 
   return (
