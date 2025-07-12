@@ -102,28 +102,22 @@ export const CoachContent = [
 export const faqContent = [
     {
         id: 1,
-        question: "How is this different from other sales training programs?",
-        answer: "Most sales training is outdated and theoretical. It’s built by people who haven't actually closed high-ticket deals at the highest levels. This isn’t just a “training program”. It’s a full immersion into elite sales. You’re learning directly from top 1% sales reps who have been leading closers for people like Alex Hormozi, Iman Gadzhi, Daniel Iles, and plenty of your other favorite influencers. Plus, we don’t just train you into a top 1% sales role",
+        question: "Why make this community free? What's the catch?",
+        answer: "We've partnered with BloFin to keep this community free while giving you access to the same professional platform we use. It's a win-win: you get quality signals, we build a community of serious traders. Think of it like a gym - the equipment is free, but you still need to show up and do the work.",
     },
     {
         id: 2,
-        question: "How does the guaranteed placement work?",
-        answer: "Every month, we connect our trained reps with 15+ high-paying sales opportunities. If you meet the standards we set inside the program, you’ll be matched with companies looking for top talent. This is not a job board. This is a direct path to getting hired in a high-ticket sales RollerCoaster.",
+        question: "Is this financial advice?",
+        answer: 'Absolutely not. We\'re just a bunch of degenerates sharing what works for us. If you need financial advice, call your accountant, not a Discord channel full of people who think "risk management" means not eating ramen for every meal.',
     },
     {
         id: 3,
-        question: "What kind of companies could I be selling for?",
-        answer: "We only work with top-tier companies in high-ticket industries, such as business & marketing coaching, financial services, SaaS & tech sales, online coaching, education and info-product sales, and investment & consulting firms. We ensure that the opportunities you’re placed in are high-quality, scalable, and have strong earning potential.",
+        question: "What do you guarantee?",
+        answer: "We guarantee you'll see exactly how we trade, learn our setups, and get access to real-time analysis. What we don't guarantee is that you'll magically become profitable by osmosis. Results require effort, discipline, and probably more screen time than your chiropractor would recommend.",
     },
     {
         id: 4,
-        question: "How much time do I need to commit?",
-        answer: "This program is built for serious sales professionals who want to level up fast. If you can commit a few hours per week to training, roleplays, and implementing what you learn, you’ll start seeing rapid progress.",
-    },
-    {
-        id: 5,
-        question: "How do I know sales training is worth the investment?",
-        answer: "Think about it this way: landing one top-tier role, doubling your close rate, or even increasing show rate will drastically change not just how you perform once, but for the rest of your life. What you learn here doesn’t just help you land a better job or close a few extra deals… It sets you up for a career of high earnings.",
+        question: "Why should I join you guys?",
+        answer: " Because we're not selling dreams or Lambos. We're sharing real strategies that work in real markets with real money. If you want motivational quotes and get-rich-quick schemes, YouTube is free. If you want to learn from traders who've actually made it work, you're in the right place.",
     }
-
 ]
