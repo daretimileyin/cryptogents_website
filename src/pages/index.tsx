@@ -3,8 +3,9 @@ import noise from "../assets/noise.png";
 import logo from "../assets/cg_logo.webp";
 import avatar from "../assets/avatar_1.jpg";
 import avatar2 from "../assets/avatar_2.jpg";
-import avatar3 from "../assets/avatar_4.jpg";
-import avatar4 from "../assets/avatar_5.jpg";
+import avatar3 from "../assets/avatar_3.jpg";
+import avatar4 from "../assets/avatar_4.jpg";
+import avatar5 from "../assets/avatar_5.jpg";
 import star from "../assets/star.svg";
 import { ArrowUpRight, Check, X } from "lucide-react";
 import HoverGlow from "../components/HoverGlow";
@@ -16,7 +17,7 @@ import CoachCard from "../components/CoachCard";
 import { DropDownTab } from "../components/DropDownTab";
 // import { VideoCarousel } from "../components/VideoCarousel";
 import { CommunityCarousel } from "../components/CommunityCarousel";
-import { ExtraCard } from "../components/ExtraCard";
+
 
 
 const staggerContainer = {
@@ -81,24 +82,24 @@ const Index = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.4 }}
             >
-              {/* <a
+              <a
                 href="#crypto_training"
                 className="hover:opacity-50 hover:text-grey-500 duration-300 ease-in-out"
               >
                 Crypto Training
-              </a> */}
+              </a>
               <a
                 href="#community"
                 className="hover:opacity-50 hover:text-grey-500 duration-300 ease-in-out"
               >
                 The Community
               </a>
-              <a
+              {/* <a
                 href="#referral"
                 className="hover:opacity-50 hover:text-grey-500 duration-300 ease-in-out"
               >
                 Trading Referrals
-              </a>
+              </a> */}
               <a
                 href="#gentlemen"
                 className="hover:opacity-50 hover:text-grey-500 duration-300 ease-in-out"
@@ -140,6 +141,8 @@ const Index = () => {
                   { src: avatar, border: "border-white", left: "left-0" },
                   { src: avatar2, border: "border-white", left: "left-6" },
                   { src: avatar3, border: "border-white", left: "left-12" },
+                  { src: avatar4, border: "border-white", left: "left-16" },
+                  { src: avatar5, border: "borderwhite", left: "left-20" }
                 ].map((item, index) => (
                   <motion.li
                     key={index}
@@ -232,7 +235,7 @@ const Index = () => {
             </motion.div>
 
             {/* Video Extra */}
-            <motion.div
+            {/* <motion.div
               className="text-white space-y-8"
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
@@ -248,7 +251,7 @@ const Index = () => {
               </motion.h3>
 
               <ExtraCard />
-            </motion.div>
+            </motion.div> */}
           </div>
         </div>
 
