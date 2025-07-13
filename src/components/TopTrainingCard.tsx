@@ -13,7 +13,7 @@ const TopTrainingCard = ({content} :TopTrainingCardProps) => {
             />
         </div>
         <div className="p-6 space-y-2">
-            <div className="p-[5px] w-fit bg-linear-to-b from-[rgba(125,203,255,0.5)] to-[rgba(125,203,255,0)] grayscale-[0.75] rounded-[72px] opacity-100">
+            <div className="p-[3px] w-fit bg-linear-to-b from-[rgba(125,203,255,0.5)] to-[rgba(125,203,255,0)] grayscale-[0.75] rounded-[72px] opacity-100">
             <div className="bg-black rounded-[72px] text-white w-fit text-center px-8 py-1">{content.tag}</div>
             </div>
             <div className="space-y-4">

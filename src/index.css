@@ -8,6 +8,11 @@
   inherits: false;
   initial-value: 0deg;
 }
+@property --hover-angle {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg;
+}
 
 *{
   scroll-behavior: smooth;

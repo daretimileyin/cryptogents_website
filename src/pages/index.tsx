@@ -355,7 +355,7 @@ const Index = () => {
                       <Check className="text-green-600" size={28} />
                       <p className="text-lg">
                         {index === 0 &&
-                          " ✓ Studies real-time market structure and liquidity flows before entering positions."}
+                          "✓ Studies real-time market structure and liquidity flows before entering positions."}
                         {index === 1 &&
                           "Follows a script from 2023, triggering instant sales resistance from prospects."}
                         {index === 2 &&
