@@ -19,7 +19,7 @@
 }
 
 .f-blops-1{
-  background: conic-gradient(from 0deg at 50% 50%, rgb(50, 0, 255) 0deg, rgb(255, 0, 26) 54.8916deg, rgb(99, 0, 197) 106.699deg, rgb(1, 23, 51) 162deg, rgb(114, 36, 0) 252deg, rgb(70, 36, 1) 306deg, rgb(255, 0, 0) 360deg); 
+  background: conic-gradient(from 0deg at 50% 50%, rgb(99, 0, 197) 0deg, rgb(99, 0, 197) 54.8916deg, rgb(99, 0, 197) 106.699deg, rgb(1, 23, 51) 162deg, rgb(114, 36, 0) 252deg, rgb(70, 36, 1) 306deg, rgb(100, 253, 77) 360deg); 
   border-radius: 50%; 
   opacity: 1;
 }

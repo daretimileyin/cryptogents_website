@@ -255,7 +255,7 @@ const Index = () => {
           </div>
         </div>
 
-        <main className="w-[90%] lg:w-[60%] mx-auto pb-16 ">
+        <main className="w-[90%] lg:w-[60%] lg:max-w-7xl mx-auto pb-16 ">
           {/* Video Testimonial */}
           {/* <motion.div
             className="overflow-y-hidden"
@@ -443,7 +443,7 @@ const Index = () => {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <HoverGlow label="The Trainers  " />
+              <HoverGlow label="The Trainers" />
             </motion.div>
 
             <motion.div

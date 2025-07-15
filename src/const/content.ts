@@ -77,7 +77,7 @@ export const CoachContent = [
         id: 1,
         srcSet: "https://framerusercontent.com/images/gsue2q9Wt2HDoLSjdw1L4LWrHP8.jpg?scale-down-to=512 512w,https://framerusercontent.com/images/gsue2q9Wt2HDoLSjdw1L4LWrHP8.jpg?scale-down-to=1024 1024w,https://framerusercontent.com/images/gsue2q9Wt2HDoLSjdw1L4LWrHP8.jpg?scale-down-to=2048 2048w,https://framerusercontent.com/images/gsue2q9Wt2HDoLSjdw1L4LWrHP8.jpg 3088w",
         src: "https://framerusercontent.com/images/gsue2q9Wt2HDoLSjdw1L4LWrHP8.jpg",
-        keywords: ["Institutional Analysis", "Price Action Expert", "Liquidity Hunter", "Futures Specialist", "Contrarian Trading"], 
+        keywords: ["Institutional Approach", "Supply/Demand", "Price Action Master", "Deviations/Traps", "Contrarian Trading", "Veteran"], 
         coach: "Mike",
         para: "Mike is a 6-year futures trader specializing in price action and institutional-level analysis. He focuses on support/resistance, demand/supply zones, and Fibonacci levels while targeting liquidity traps where retail traders get caught. His edge comes from thinking like the institutions—trading against the crowd when they're most vulnerable."
     },
@@ -85,7 +85,7 @@ export const CoachContent = [
         id: 2,
         srcSet: "https://framerusercontent.com/images/W7MsLgM9zqeXPdLwHnP2frW9uw.jpg?scale-down-to=512 512w,https://framerusercontent.com/images/W7MsLgM9zqeXPdLwHnP2frW9uw.jpg?scale-down-to=1024 1024w,https://framerusercontent.com/images/W7MsLgM9zqeXPdLwHnP2frW9uw.jpg?scale-down-to=2048 2048w,https://framerusercontent.com/images/W7MsLgM9zqeXPdLwHnP2frW9uw.jpg?scale-down-to=4096 4096w,https://framerusercontent.com/images/W7MsLgM9zqeXPdLwHnP2frW9uw.jpg 6000w",
         src: "https://framerusercontent.com/images/W7MsLgM9zqeXPdLwHnP2frW9uw.jpg",
-        keywords: ["Crpto Specialist", "Multi-Timeframe", "System Developer", "Mentorship Graduate", "Adaptive Strategies"], 
+        keywords: ["Smart Money Concepts","Macro Mastery","Elliott Waves","Liquidity Trading", "Adaptive Strategies","Rising Star"], 
         coach: "Anthony",
         para: "Anthony is a 21-year-old trader who entered the markets in 2021 and has maintained profitability for over 2 years. Having studied under seven different mentors, he's developed a unique approach that combines the best elements from each.<br /> His expertise spans the full spectrum of market analysis—from supply/demand zones and retail patterns to advanced smart money concepts and liquidity strategies. This comprehensive skillset allows him to develop effective trading systems across all timeframes, from day trading to long-term investing, with a particular focus on cryptocurrency markets.",
     },
@@ -93,9 +93,17 @@ export const CoachContent = [
         id: 3,
         srcSet: "https://framerusercontent.com/images/cvJAEnJJ7QESBRU1mddYLzMOGeo.jpg?scale-down-to=512 512w,https://framerusercontent.com/images/cvJAEnJJ7QESBRU1mddYLzMOGeo.jpg 1000w",
         src: "https://framerusercontent.com/images/cvJAEnJJ7QESBRU1mddYLzMOGeo.jpg",
-        keywords: ["Supply/Demand Expert", "Price Action Master", "Proven Mentor", "High Win Rate", "Admin Level"], 
+        keywords: ["Supply/Demand Expert","Price Action Master","Proven Mentor","Adaptive Entries","Agile Mindset","Veteran"], 
         coach: "Hodge",
         para: "Hodge brings 6-7 years of price action trading expertise, specializing in supply and demand strategies combined with proven indicators. He trades both spot and futures markets with exceptional precision.<br /> Starting as a paying member of a trading group, Hodge quickly achieved profitability and began sharing high-success setups. His consistent performance earned him a promotion to the admin team, where he now mentors traders, transforming consistent losers into steady winners.<br /> His proven track record of guiding struggling traders to profitability demonstrates his ability to teach both technical skills and the winning mindset required for market success."
+    },
+    {
+        id: 4,
+        srcSet: "https://framerusercontent.com/images/BbOowqb0hzDx5zpUQzIoY0Mw.jpeg?scale-down-to=512 512w,https://framerusercontent.com/images/BbOowqb0hzDx5zpUQzIoY0Mw.jpeg?scale-down-to=1024 1024w,https://framerusercontent.com/images/BbOowqb0hzDx5zpUQzIoY0Mw.jpeg?scale-down-to=2048 2048w,https://framerusercontent.com/images/BbOowqb0hzDx5zpUQzIoY0Mw.jpeg 2444w",
+        src: "https://framerusercontent.com/images/BbOowqb0hzDx5zpUQzIoY0Mw.jpeg",
+        keywords: ["Smart Money Concepts", "Momentum Trading", "Range Trading", "Sniper Entries", "Liquidity hunter", "Proven Mentor", "Master"], 
+        coach: "Gent",
+        para: "Gent is a seasoned crypto day and swing trader with over 5 years of experience specializing in momentum and liquidity-based strategies. He excels at precise entries and exits across volatile market conditions through disciplined, data-driven analysis.<br />Starting with just $1,000, he has consistently grown his portfolio to six figures using structured risk management and emotional discipline. His expertise in liquidity flow and price action enables him to identify high-probability setups in both trending and consolidating markets.<br /> Beyond personal success, he has mentored countless traders to profitability, teaching the combination of technical precision and winning mindset required for consistent results in the dynamic crypto ecosystem."
     }
 ]
 
