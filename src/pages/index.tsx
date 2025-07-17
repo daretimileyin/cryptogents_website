@@ -713,7 +713,7 @@ const Index = () => {
                 links, we may earn a small commission — at no extra cost to you.
                 We only recommend tools and services we believe in.
               </motion.p> */}
-              <motion.p
+              {/* <motion.p
                 className="flex flex-col text-center text-sm"
                 variants={staggerItem}
               >
@@ -721,7 +721,7 @@ const Index = () => {
                 the Facebook™ website or Facebook Inc. Additionally, this site
                 is NOT endorsed by Facebook in any way. FACEBOOK™ is a trademark
                 of FACEBOOK, Inc.
-              </motion.p>
+              </motion.p> */}
             </motion.div>
             <motion.div className="text-lg" variants={staggerItem}>
               Terms and Conditions | Privacy Policy | Refund Policy | Cookies
