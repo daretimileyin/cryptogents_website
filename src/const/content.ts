@@ -85,9 +85,9 @@ export const CoachContent = [
         id: 2,
         srcSet: "https://framerusercontent.com/images/W7MsLgM9zqeXPdLwHnP2frW9uw.jpg?scale-down-to=512 512w,https://framerusercontent.com/images/W7MsLgM9zqeXPdLwHnP2frW9uw.jpg?scale-down-to=1024 1024w,https://framerusercontent.com/images/W7MsLgM9zqeXPdLwHnP2frW9uw.jpg?scale-down-to=2048 2048w,https://framerusercontent.com/images/W7MsLgM9zqeXPdLwHnP2frW9uw.jpg?scale-down-to=4096 4096w,https://framerusercontent.com/images/W7MsLgM9zqeXPdLwHnP2frW9uw.jpg 6000w",
         src: "https://framerusercontent.com/images/W7MsLgM9zqeXPdLwHnP2frW9uw.jpg",
-        keywords: ["Smart Money Concepts","Macro Mastery","Elliott Waves","Liquidity Trading", "Adaptive Strategies","Rising Star"], 
+        keywords: ["Smart Money Concepts","Macro Mastery","Elliott Waves","Liquidity Trading","Momentum Trading", "Adaptive Strategies","Rising Star"], 
         coach: "Anthony",
-        para: "Anthony is a 21-year-old trader who entered the markets in 2021 and has maintained profitability for over 2 years. Having studied under seven different mentors, he's developed a unique approach that combines the best elements from each.<br /> His expertise spans the full spectrum of market analysis—from supply/demand zones and retail patterns to advanced smart money concepts and liquidity strategies. This comprehensive skillset allows him to develop effective trading systems across all timeframes, from day trading to long-term investing, with a particular focus on cryptocurrency markets.",
+        para: "Anthony is a 21-year-old trader who entered the markets in 2021 and has maintained profitability for over 2 years. Having studied under seven different mentors, he's developed a unique approach that combines the best elements from each.<br /> His expertise spans the full spectrum of market analysis—from supply/demand zones,retail patterns,and fibonnaci sequences to advanced smart money concepts and liquidity strategies and elliott wave theories.This comprehensive skillset allows him to develop effective trading systems across all timeframes, from day trading to long-term investing, with a particular focus on cryptocurrency markets.",
     },
     {
         id: 3,

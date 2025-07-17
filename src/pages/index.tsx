@@ -142,7 +142,7 @@ const Index = () => {
                   { src: avatar2, border: "border-white", left: "left-6" },
                   { src: avatar3, border: "border-white", left: "left-12" },
                   { src: avatar4, border: "border-white", left: "left-16" },
-                  { src: avatar5, border: "borderwhite", left: "left-20" }
+                  { src: avatar5, border: "borderwhite", left: "left-20" },
                 ].map((item, index) => (
                   <motion.li
                     key={index}
@@ -195,7 +195,7 @@ const Index = () => {
               </motion.h1>
 
               <motion.p
-                className="text-lg lg:text-xl bg-gradient-to-r from-[#d0d0d0] via-[#999] to-[#d0d0d0] bg-clip-text text-transparent"
+                className="text-lg lg:text-xl text-white"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 1 }}
@@ -318,7 +318,7 @@ const Index = () => {
                         {index === 1 &&
                           "Follows outdated strategies from 2021, triggering instant losses in current market conditions."}
                         {index === 2 &&
-                          "Jumps into each sales call hoping for the best, instead of using a proven strategy."}
+                          "Jumps into each trade hoping for the best, instead of using proven setups."}
                         {index === 3 &&
                           "Stays with low-quality communities that don't care about their success or growth."}
                       </p>
@@ -335,9 +335,7 @@ const Index = () => {
                 viewport={{ once: true }}
               >
                 <div className="text-center">
-                  <h3 className="text-2xl font-bold">
-                    A Cryptogents Member
-                  </h3>
+                  <h3 className="text-2xl font-bold">A Cryptogents Member</h3>
                 </div>
                 <motion.ul
                   className="relative space-y-2 border p-6 rounded-xl overflow-hidden"
@@ -355,9 +353,9 @@ const Index = () => {
                       <Check className="text-green-600" size={28} />
                       <p className="text-lg">
                         {index === 0 &&
-                          "✓ Studies real-time market structure and liquidity flows before entering positions."}
+                          "Studies real-time market structure and liquidity flows before entering positions."}
                         {index === 1 &&
-                          "Follows a script from 2023, triggering instant sales resistance from prospects."}
+                          "Uses disciplined risk management with predetermined stop losses and position sizing."}
                         {index === 2 &&
                           "Focuses on high-probability setups based on supply/demand zones and price action."}
                         {index === 3 &&
@@ -379,23 +377,28 @@ const Index = () => {
               viewport={{ once: true }}
             >
               <motion.div
-                className="lg:w-[75%] mx-auto text-center text-lg lg:text-xl text-gray-400 space-y-8"
+                className="lg:w-[75%] mx-auto text-center text-lg lg:text-xl text-gray-100 space-y-8"
                 variants={staggerContainer}
                 initial="initial"
                 whileInView="animate"
                 viewport={{ once: true }}
               >
                 <motion.p variants={staggerItem}>
-                  <strong>Top 1% traders don't just make profits. They make them consistently.</strong>
+                  <strong>
+                    Top 1% traders don't just make profits. They make them
+                    consistently.
+                  </strong>
                 </motion.p>
                 <motion.p variants={staggerItem}>
-                  And that's why the best traders don't just "survive" market crashes like the others. They thrive.
+                  And that's why the best traders don't just "survive" market
+                  crashes like the others. They thrive.
                 </motion.p>
                 <motion.p variants={staggerItem}>
                   But the reality? No ones born with that skillset.
                 </motion.p>
                 <motion.p variants={staggerItem}>
-                  You need to learn it from someone who's actually done it at the highest level.
+                  You need to learn it from someone who's actually done it at
+                  the highest level.
                 </motion.p>
               </motion.div>
               <motion.div
@@ -443,7 +446,7 @@ const Index = () => {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <HoverGlow label="The Trainers" />
+              <HoverGlow label="The Traders" />
             </motion.div>
 
             <motion.div
@@ -531,7 +534,6 @@ const Index = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-
             <motion.div
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -621,7 +623,8 @@ const Index = () => {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 viewport={{ once: true }}
               >
-                Becoming profitable and mastering crypto trading doesn't just "happen"
+                Becoming profitable and mastering crypto trading doesn't just
+                "happen"
               </motion.h1>
 
               <motion.p
@@ -631,7 +634,11 @@ const Index = () => {
                 transition={{ duration: 0.6, delay: 0.4 }}
                 viewport={{ once: true }}
               >
-                If you're serious about leveling up your trading game, you need the right setups, the right analysis, and the right traders behind you. We're here to give you the exact strategies and real-time insights that consistently profitable traders use to beat the market.
+                If you're serious about leveling up your trading game, you need
+                the right setups, the right analysis, and the right traders
+                behind you. We're here to give you the exact strategies and
+                real-time insights that consistently profitable traders use to
+                beat the market.
               </motion.p>
 
               <motion.div
@@ -659,7 +666,6 @@ const Index = () => {
                 </div>
               </div>
             </div>
-            
           </motion.div>
         </main>
 
@@ -678,7 +684,7 @@ const Index = () => {
             viewport={{ once: true }}
           >
             <div className="w-fit flex gap-4 items-center mx-auto">
-              <img src={logo} className="w-16"/>
+              <img src={logo} className="w-16" />
               <p className="text-white text-3xl font-extrabold">Cryptogents</p>
             </div>
             <motion.div className="space-y-4" variants={staggerContainer}>

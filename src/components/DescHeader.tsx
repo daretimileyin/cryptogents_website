@@ -38,7 +38,7 @@ const DescHeader = ({ header, paragraph }: DescHeaderProps) => {
         )}
       </h1>
       {paragraph && (
-        <p className="lg:w-[65%] mx-auto text-[1.05rem] lg:text-lg text-center bg-gradient-to-r from-[#d0d0d0] via-[#999] to-[#d0d0d0] bg-clip-text text-transparent">
+        <p className="lg:w-[65%] mx-auto text-[1.05rem] lg:text-lg text-center text-white">
           {paragraph}
         </p>
       )}
