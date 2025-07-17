@@ -394,7 +394,7 @@ const Index = () => {
                   crashes like the others. They thrive.
                 </motion.p>
                 <motion.p variants={staggerItem}>
-                  But the reality? No ones born with that skillset.
+                  But the reality? No one is born with that skillset.
                 </motion.p>
                 <motion.p variants={staggerItem}>
                   You need to learn it from someone who's actually done it at
