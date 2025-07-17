@@ -43,7 +43,7 @@ export const DropDownTab = ({ content }: DropDownTabProps) => {
 
         {/* Expandable Content */}
         <div
-          className={`px-6 text-gray-400 text-[1.05rem] overflow-hidden transition-all duration-300 ease-in-out ${
+          className={`px-6 text-white text-[1.05rem] overflow-hidden transition-all duration-300 ease-in-out ${
             isShown ? "pb-6 max-h-[500px] opacity-100" : "max-h-0 opacity-0"
           }`}
         >
