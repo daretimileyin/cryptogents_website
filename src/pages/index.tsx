@@ -311,7 +311,7 @@ const Index = () => {
                       className="flex items-center gap-2"
                       variants={staggerItem}
                     >
-                      <X className="text-gray-600" size={28} />
+                      <X className="text-red-600" size={28} />
                       <p className="text-lg">
                         {index === 0 &&
                           "Uses basic, overused indicators and signals from their favorite trading guru."}
