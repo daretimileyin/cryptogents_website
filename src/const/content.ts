@@ -1,3 +1,8 @@
+import communityLogo1 from "../assets/community1.png"
+import communityLogo2 from "../assets/community2.png";
+import communityLogo3 from "../assets/community3.png";
+import communityLogo4 from "../assets/community4.png";
+import communityLogo5 from "../assets/community5.png";
 export const videoContent = [
     {
         id: 1,
@@ -30,47 +35,48 @@ export const videoContent = [
 ]
 
 export const TopTrainingContent = [
-    {
-        id: 1,
-        srcSet: "https://framerusercontent.com/images/k3xNuNLbHEgORooIxbn3RReUI.png?scale-down-to=512 512w,https://framerusercontent.com/images/k3xNuNLbHEgORooIxbn3RReUI.png 1024w",
-        src: "https://framerusercontent.com/images/k3xNuNLbHEgORooIxbn3RReUI.png",
-        tag: "Market Mastery & Psychology",
-        header: "Forge Market Avatars ",
-        para: "We forge market avatars who bend the market rather than get bent by it. Develop the mental fortitude and strategic thinking to thrive in any condition."
-    },
-    {
-        id: 2,
-        srcSet: "https://framerusercontent.com/images/BUdifDpcysVdyaHmuZdTcx75RP0.png?scale-down-to=512 512w,https://framerusercontent.com/images/BUdifDpcysVdyaHmuZdTcx75RP0.png 1024w",
-        src: "https://framerusercontent.com/images/BUdifDpcysVdyaHmuZdTcx75RP0.png",
-        tag: "Complete Trader Development ",
-        header: "Master Trading Intangibles",
-        para: "Success goes beyond technical analysis. We provide the intangible skills that separate profitable traders—psychological edge, risk management, and winning mindset."
-    },
-    {
-        id: 3,
-        srcSet: "https://framerusercontent.com/images/k3xNuNLbHEgORooIxbn3RReUI.png?scale-down-to=512 512w,https://framerusercontent.com/images/k3xNuNLbHEgORooIxbn3RReUI.png 1024w",
-        src: "https://framerusercontent.com/images/k3xNuNLbHEgORooIxbn3RReUI.png",
-        tag: "Adaptive Systems Vault",
-        header: "Scalable Trading Systems",
-        para: "Our curated systems adapt to any market condition. Whether trending, ranging, or volatile, our methods evolve to keep you profitable across all cycles."
-    },
-    {
-        id: 4,
-        srcSet: "https://framerusercontent.com/images/LnphBHnZ87N9VDL2G73es7yRNg.png?scale-down-to=512 512w,https://framerusercontent.com/images/LnphBHnZ87N9VDL2G73es7yRNg.png 1024w",
-        src: "https://framerusercontent.com/images/LnphBHnZ87N9VDL2G73es7yRNg.png",
-        tag: "Elite Trader Access",
-        header: "Insider Trading Wisdom",
-        para: "Direct access to seasoned traders sharing insights nobody talks about—their real concerns, beliefs, and approaches that only market veterans provide."
-    },
-    {
-        id: 5,
-        srcSet: "https://framerusercontent.com/images/k3xNuNLbHEgORooIxbn3RReUI.png?scale-down-to=512 512w,https://framerusercontent.com/images/k3xNuNLbHEgORooIxbn3RReUI.png 1024w",
-        src: "https://framerusercontent.com/images/k3xNuNLbHEgORooIxbn3RReUI.png",
-        tag: "Mentorship & Support ",
-        header: "Learning by Osmosis",
-        para: "Hands-on mentorship with profitable traders. Absorb winning systems, mindset, and character traits, plus analytical support including signals and guidance."
-    },
-]
+  {
+    id: 1,
+    srcSet: `https://framerusercontent.com/images/k3xNuNLbHEgORooIxbn3RReUI.png?scale-down-to=512 512w,${communityLogo1} 1024w`,
+    src: communityLogo1,
+    tag: "Market Mastery & Psychology",
+    header: "Forge Market Avatars ",
+    para: "We forge market avatars who bend the market rather than get bent by it. Develop the mental fortitude and strategic thinking to thrive in any condition.",
+  },
+  {
+    id: 2,
+    srcSet: `https://framerusercontent.com/images/BUdifDpcysVdyaHmuZdTcx75RP0.png?scale-down-to=512 512w,${communityLogo2} 1024w`,
+    src: communityLogo2,
+    tag: "Complete Trader Development ",
+    header: "Master Trading Intangibles",
+    para: "Success goes beyond technical analysis. We provide the intangible skills that separate profitable traders—psychological edge, risk management, and winning mindset.",
+  },
+  {
+    id: 3,
+    srcSet: `https://framerusercontent.com/images/k3xNuNLbHEgORooIxbn3RReUI.png?scale-down-to=512 512w,${communityLogo3} 1024w`,
+    src: communityLogo3,
+    tag: "Adaptive Systems Vault",
+    header: "Scalable Trading Systems",
+    para: "Our curated systems adapt to any market condition. Whether trending, ranging, or volatile, our methods evolve to keep you profitable across all cycles.",
+  },
+  {
+    id: 4,
+    srcSet: `https://framerusercontent.com/images/LnphBHnZ87N9VDL2G73es7yRNg.png?scale-down-to=512 512w,${communityLogo4} 1024w`,
+    src: communityLogo4,
+    tag: "Elite Trader Access",
+    header: "Insider Trading Wisdom",
+    para: "Direct access to seasoned traders sharing insights nobody talks about—their real concerns, beliefs, and approaches that only market veterans provide.",
+  },
+  {
+    id: 5,
+    srcSet:
+      `https://framerusercontent.com/images/k3xNuNLbHEgORooIxbn3RReUI.png?scale-down-to=512 512w,${communityLogo5} 1024w`,
+    src: communityLogo5,
+    tag: "Mentorship & Support ",
+    header: "Learning by Osmosis",
+    para: "Hands-on mentorship with profitable traders. Absorb winning systems, mindset, and character traits, plus analytical support including signals and guidance.",
+  },
+];
 
 export const CoachContent = [
     {
