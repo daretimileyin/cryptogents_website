@@ -229,7 +229,7 @@ const Index = () => {
                 loading="lazy"
                 title="Youtube Video"
                 allow="presentation; fullscreen; accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                src="https://www.youtube.com/embed/_G7fsQy6L8I?iv_load_policy=3&rel=0&modestbranding=1&playsinline=1&autoplay=0&autohide=1"
+                src="https://www.youtube.com/embed/HiNSaaEM1us?iv_load_policy=3&rel=0&modestbranding=1&playsinline=1&autoplay=0&autohide=1"
                 className="w-full aspect-video"
               ></iframe>
             </motion.div>
