@@ -734,7 +734,6 @@ const Index = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <small>Design & Development by </small>
             </motion.a>
           </motion.div>
         </motion.div>
