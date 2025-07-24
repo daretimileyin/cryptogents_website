@@ -227,11 +227,21 @@ const Index = () => {
             >
               <iframe
                 loading="lazy"
-                title="Youtube Video"
-                allow="presentation; fullscreen; accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                title="YouTube Video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                referrerPolicy="no-referrer-when-downgrade"
                 src="https://www.youtube.com/embed/HiNSaaEM1us?iv_load_policy=3&rel=0&modestbranding=1&playsinline=1&autoplay=0&autohide=1"
-                className="w-full aspect-video"
-              ></iframe>
+                className="w-full aspect-video border-none"
+              />
+              <noscript>
+                <a
+                  href="https://www.youtube.com/watch?v=HiNSaaEM1us"
+                  target="_blank"
+                >
+                  Watch on YouTube
+                </a>
+              </noscript>
             </motion.div>
 
             {/* Video Extra */}
@@ -733,8 +743,7 @@ const Index = () => {
               variants={staggerItem}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-            >
-            </motion.a>
+            ></motion.a>
           </motion.div>
         </motion.div>
       </div>
