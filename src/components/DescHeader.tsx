@@ -27,12 +27,12 @@ const DescHeader = ({ header, paragraph }: DescHeaderProps) => {
     <div className="w-full text-center space-y-5">
       <h1 className="lg:w-[85%] mx-auto text-[32px] md:text-[42px] lg:text-[50px] font-semibold leading-tight tracking-tight">
         {decodeHeadInfo[0] && (
-          <span className="block bg-gradient-to-r from-[#f0f0f0] via-[#ccc] to-[#f0f0f0] bg-clip-text text-transparent">
+          <span className="gradient-text">
             {decodeHeadInfo[0]}
           </span>
         )}
         {decodeHeadInfo[1] && (
-          <span className="block bg-gradient-to-r from-[#f0f0f0] via-[#ccc] to-[#f0f0f0] bg-clip-text text-transparent">
+          <span className="gradient-text">
             {decodeHeadInfo[1]}
           </span>
         )}

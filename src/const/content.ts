@@ -145,7 +145,7 @@ export const CoachContent = [
       "Master",
     ],
     coach: "Mark",
-    para: "Gent is a seasoned crypto day and swing trader with over 5 years of experience specializing in momentum and liquidity-based strategies. He excels at precise entries and exits across volatile market conditions through disciplined, data-driven analysis.<br />Starting with just $1,000, he has consistently grown his portfolio to six figures using structured risk management and emotional discipline. His expertise in liquidity flow and price action enables him to identify high-probability setups in both trending and consolidating markets.<br /> Beyond personal success, he has mentored countless traders to profitability, teaching the combination of technical precision and winning mindset required for consistent results in the dynamic crypto ecosystem.",
+    para: "Mark is a seasoned crypto day and swing trader with over 5 years of experience specializing in momentum and liquidity-based strategies. He excels at precise entries and exits across volatile market conditions through disciplined, data-driven analysis.<br />Starting with just $1,000, he has consistently grown his portfolio to six figures using structured risk management and emotional discipline. His expertise in liquidity flow and price action enables him to identify high-probability setups in both trending and consolidating markets.<br /> Beyond personal success, he has mentored countless traders to profitability, teaching the combination of technical precision and winning mindset required for consistent results in the dynamic crypto ecosystem.",
   },
 ];
 

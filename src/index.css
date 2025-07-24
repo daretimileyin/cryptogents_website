@@ -1,4 +1,8 @@
 @import 'tailwindcss';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 
 @theme {
   --font-body: Inter, sans-serif;
@@ -57,6 +61,14 @@
   to {
     --border-angle: -360deg;
   }
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #f0f0f0, #aaa, #f0f0f0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
 /* Utilities */
@@ -187,3 +199,8 @@
     100% { transform: translate(0px, 0px); }
   }
 }
+
+
+
+
+

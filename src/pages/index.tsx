@@ -186,7 +186,7 @@ const Index = () => {
               transition={{ duration: 0.8, delay: 0.6 }}
             >
               <motion.h1
-                className="text-[2rem] sm:text-[2.5rem] md:text-[3rem] lg:text-[3.5rem] font-semibold leading-tight tracking-tight mx-auto max-w-[90%] md:max-w-[80%] lg:max-w-[80%] bg-gradient-to-r from-[#f0f0f0] via-[#aaa] to-[#f0f0f0] bg-clip-text text-transparent text-center"
+                className="gradient-text text-[2rem] sm:text-[2.5rem] md:text-[3rem] lg:text-[3.5rem] font-semibold leading-tight tracking-tight mx-auto max-w-[90%] md:max-w-[80%] lg:max-w-[80%] text-center"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.8 }}
@@ -226,22 +226,16 @@ const Index = () => {
               transition={{ duration: 0.8, delay: 1.4 }}
             >
               <iframe
-                loading="lazy"
-                title="YouTube Video"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                referrerPolicy="no-referrer-when-downgrade"
-                src="https://www.youtube.com/embed/HiNSaaEM1us?iv_load_policy=3&rel=0&modestbranding=1&playsinline=1&autoplay=0&autohide=1"
-                className="w-full aspect-video border-none"
-              />
-              <noscript>
-                <a
-                  href="https://www.youtube.com/watch?v=HiNSaaEM1us"
-                  target="_blank"
-                >
-                  Watch on YouTube
-                </a>
-              </noscript>
+                width="1264"
+                height="711"
+                src="https://www.youtube.com/embed/HiNSaaEM1us?playsinline=1&iv_load_policy=3&rel=0&modestbranding=1&autohide=1"
+                title="Crypto Gents Guide"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+                className="w-full aspect-video"
+              ></iframe>
             </motion.div>
 
             {/* Video Extra */}
@@ -466,7 +460,7 @@ const Index = () => {
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <h1 className="mx-auto max-w-[90%] sm:max-w-[80%] md:max-w-[80%] lg:max-w-[80%] text-[1.9rem] sm:text-[2.3rem] md:text-[2.8rem] lg:text-[3.3rem] font-semibold leading-tight bg-gradient-to-r from-[#f0f0f0] via-[#aaa] to-[#f0f0f0] bg-clip-text text-transparent">
+              <h1 className="gradient-text sm:text-[2.5rem] md:text-[3rem] lg:text-[3.5rem] font-semibold leading-tight tracking-tight mx-auto max-w-[90%] md:max-w-[80%] lg:max-w-[80%] text-center">
                 We master all timeframes, all setups and every single profitable
                 trading pattern.
               </h1>
