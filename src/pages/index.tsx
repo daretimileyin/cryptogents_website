@@ -230,10 +230,10 @@ const Index = () => {
                 height="711"
                 src="https://www.youtube.com/embed/HiNSaaEM1us?playsinline=1&iv_load_policy=3&rel=0&modestbranding=1&autohide=1"
                 title="Crypto Gents Guide"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
                 className="w-full aspect-video"
               ></iframe>
             </motion.div>
