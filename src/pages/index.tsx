@@ -218,7 +218,7 @@ const Index = () => {
               </motion.a>
             </motion.div>
 
-            {/* YouTube Video */}
+            {/* YouTube Video 1*/}
             <motion.div
               className="w-full aspect-video rounded-3xl overflow-hidden"
               initial={{ opacity: 0, y: 40 }}
