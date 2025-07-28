@@ -226,14 +226,10 @@ const Index = () => {
               transition={{ duration: 0.8, delay: 1.4 }}
             >
               <iframe
-                width="1264"
-                height="711"
-                src="https://www.youtube.com/embed/HiNSaaEM1us?playsinline=1&iv_load_policy=3&rel=0&modestbranding=1&autohide=1"
-                title="Crypto Gents Guide"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
+                loading="lazy"
+                title="Youtube Video"
+                allow="presentation; fullscreen; accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                src="https://www.youtube.com/embed/HiNSaaEM1us?iv_load_policy=3&rel=0&modestbranding=1&playsinline=1&autoplay=0&autohide=1"
                 className="w-full aspect-video"
               ></iframe>
             </motion.div>
