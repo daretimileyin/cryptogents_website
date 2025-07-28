@@ -287,7 +287,7 @@ const Index = () => {
             >
               <DescHeader
                 header="What the top 1% of traders do that the average trader doesn't."
-                paragraph="Top closers don't wing it - they operate with precision."
+                paragraph="Top traders don't wing it - they operate with precision."
               />
             </motion.div>
 
