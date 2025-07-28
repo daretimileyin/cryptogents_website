@@ -228,25 +228,12 @@ const Index = () => {
               <iframe
                 loading="lazy"
                 title="Youtube Video"
-                allow="presentation; fullscreen; accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 src="https://www.youtube.com/embed/HiNSaaEM1us?iv_load_policy=3&rel=0&modestbranding=1&playsinline=1&autoplay=0&autohide=1"
-                className="w-full aspect-video"
+                allow="fullscreen; accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                className="w-full h-full object-cover"
+                frameBorder="0"
               ></iframe>
             </motion.div>
-            {/* <motion.div
-              className="w-full aspect-video rounded-3xl overflow-hidden"
-              initial={{ opacity: 0, y: 40 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 1.4 }}
-            >
-              <iframe
-                loading="lazy"
-                title="Youtube Video"
-                allow="presentation; fullscreen; accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                src="https://www.youtube.com/embed/HiNSaaEM1us?iv_load_policy=3&rel=0&modestbranding=1&playsinline=1&autoplay=0&autohide=1"
-                className="w-full aspect-video"
-              ></iframe>
-            </motion.div> */}
 
             {/* Video Extra */}
             {/* <motion.div
