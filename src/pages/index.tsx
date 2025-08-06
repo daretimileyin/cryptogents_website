@@ -1,5 +1,3 @@
-
-import React, { useState } from "react";
 import { motion } from "framer-motion";
 import noise from "../assets/noise.png";
 import logo from "../assets/cg_logo.webp";
