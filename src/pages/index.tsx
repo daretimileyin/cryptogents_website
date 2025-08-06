@@ -1,3 +1,5 @@
+
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import noise from "../assets/noise.png";
 import logo from "../assets/cg_logo.webp";
@@ -17,6 +19,12 @@ import CoachCard from "../components/CoachCard";
 import { DropDownTab } from "../components/DropDownTab";
 // import { VideoCarousel } from "../components/VideoCarousel";
 import { CommunityCarousel } from "../components/CommunityCarousel";
+import BlofinLogo from "../assets/blofinLogo.png";
+import Avatar1  from "../assets/avatar_1.jpg";
+import Avatar2 from "../assets/avatar_2.jpg";
+import Avatar3 from "../assets/avatar_3.jpg";
+import Avatar4 from "../assets/avatar_4.jpg";
+import Avatar5  from "../assets/avatar_5.jpg";
 
 
 
@@ -35,6 +43,9 @@ const staggerItem = {
 };
 
 const Index = () => {
+ const [previewImg, setPreviewImg] = useState<string | null>(null);
+
+  const imageArray: string[] = [Avatar1, Avatar2, Avatar3, Avatar4, Avatar5];
   return (
     <div className="relative bg-black overflow-y-hidden">
       {/* 🔵 STATIC BACKGROUND (Blobs + Noise) */}
@@ -218,7 +229,7 @@ const Index = () => {
               </motion.a>
             </motion.div>
 
-            {/* YouTube Video 1*/}
+            {/* YouTube Video 1 2*/}
             <motion.div
               className="w-full aspect-video rounded-3xl overflow-hidden"
               initial={{ opacity: 0, y: 40 }}
@@ -253,6 +264,79 @@ const Index = () => {
 
               <ExtraCard />
             </motion.div> */}
+          </div>
+        </div>
+
+        {/* Scrolling Image Carousel with Preview */}
+        <div className="w-full flex flex-col items-center py-8">
+          <div className="relative w-full max-w-5xl mx-auto overflow-hidden">
+            <div className="flex flex-row gap-8 p-2 animate-carousel scrolling-carousel">
+              {[...Array(2)].flatMap(() =>
+                imageArray.map((img, idx) => (
+                  <button
+                    key={`${img}-${idx}`}
+                    className="focus:outline-none flex-shrink-0 w-44 h-28"
+                    onClick={() => setPreviewImg(img)}
+                  >
+                    <img
+                      src={img}
+                      alt="Preview"
+                      className="w-full h-full rounded-xl shadow-lg border border-gray-700 object-cover cursor-pointer hover:scale-105 transition"
+                    />
+                  </button>
+                ))
+              )}
+            </div>
+          </div>
+
+          {/* Modal Preview */}
+          {previewImg && (
+            <div
+              className="fixed inset-0 z-50 flex items-center justify-center bg-black/70"
+              onClick={() => setPreviewImg(null)}
+            >
+              <div className="bg-black rounded-2xl p-4 shadow-2xl relative">
+                <img
+                  src={previewImg}
+                  alt="Preview"
+                  className="rounded-xl max-w-full max-h-[80vh] object-contain"
+                />
+                <button
+                  className="absolute top-2 right-2 text-white bg-gray-800 rounded-full p-2"
+                  onClick={() => setPreviewImg(null)}
+                >
+                  {/* Close Icon */}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={2}
+                    stroke="currentColor"
+                    className="w-6 h-6"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          )}
+        </div>
+
+        {/* Trusted by Industry Leaders Bar */}
+        <HoverGlow label="Our Exclusive Partner" />
+        <div className="w-full flex flex-col items-center py-8">
+          <div className="flex flex-row justify-center items-center gap-12 w-full max-w-5xl mx-auto">
+            <a href="https://partner.blofin.com/d/CryptoGents" target="_blank">
+              <img
+                src={BlofinLogo}
+                alt="Elliott Group"
+                className="h-20 object-contain "
+              />
+            </a>
           </div>
         </div>
 

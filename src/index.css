@@ -46,6 +46,16 @@
   background: conic-gradient(from var(--border-angle), #010101 50%, #8E44AD 70%, #010101 100%);
 }
 
+.scrolling-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.scrolling-carousel {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+
+
 /* Clockwise */
 @keyframes rotate-border-cw {
   to {
@@ -76,6 +86,8 @@
 .animate-rotate-border-ccw {
   animation: rotate-border-ccw 3s linear infinite;
 }
+
+
 /*
   The default border color has changed to `currentcolor` in Tailwind CSS v4,
   so we've added these compatibility styles to make sure everything still
@@ -195,6 +207,26 @@
     85%  { transform: translate(-115px, 125px); }
     100% { transform: translate(0px, 0px); }
   }
+
+  @keyframes carousel-scroll {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+.scrolling-carousel {
+  width: max-content;
+}
+.animate-carousel {
+    animation: carousel-scroll 30s linear infinite;
+  }
+
+  .animate-carousel:hover {
+    animation-play-state: paused;
+  }
+
 }
 
 
