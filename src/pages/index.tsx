@@ -20,11 +20,26 @@ import { DropDownTab } from "../components/DropDownTab";
 // import { VideoCarousel } from "../components/VideoCarousel";
 import { CommunityCarousel } from "../components/CommunityCarousel";
 import BlofinLogo from "../assets/blofinLogo.png";
-import Avatar1  from "../assets/avatar_1.jpg";
-import Avatar2 from "../assets/avatar_2.jpg";
-import Avatar3 from "../assets/avatar_3.jpg";
-import Avatar4 from "../assets/avatar_4.jpg";
-import Avatar5  from "../assets/avatar_5.jpg";
+import Kucoin from "../assets/Kucoin.png";
+import Result1 from "../assets/result1.jpg";
+import Result2 from "../assets/result2.jpg";
+import Result3 from "../assets/result3.jpg";
+import Result4 from "../assets/result4.jpg";
+import Result5 from "../assets/result5.jpg";
+import Result6 from "../assets/result6.jpg";
+import Result7 from "../assets/result7.jpg";
+import Result8 from "../assets/result8.jpg";
+import Result9 from "../assets/result9.jpg";
+import Result10 from "../assets/result10.jpg";
+import Result11 from "../assets/result11.jpg";
+import Result12 from "../assets/result12.jpg";
+import Result13 from "../assets/result13.jpg";
+import Result14 from "../assets/result14.jpg";
+import Result15 from "../assets/result15.jpg";
+import Result16 from "../assets/result16.jpg";
+import Result17 from "../assets/result17.jpg";
+
+
 
 
 
@@ -45,7 +60,25 @@ const staggerItem = {
 const Index = () => {
  const [previewImg, setPreviewImg] = useState<string | null>(null);
 
-  const imageArray: string[] = [Avatar1, Avatar2, Avatar3, Avatar4, Avatar5];
+  const imageArray: string[] = [
+    Result1,
+    Result2,
+    Result3,
+    Result4,
+    Result5,
+    Result6,
+    Result7,
+    Result8,
+    Result9,
+    Result10,
+    Result11,
+    Result12,
+    Result13,
+    Result14,
+    Result15,
+    Result16,
+    Result17
+  ];
   return (
     <div className="relative bg-black overflow-y-hidden">
       {/* 🔵 STATIC BACKGROUND (Blobs + Noise) */}
@@ -237,11 +270,11 @@ const Index = () => {
               transition={{ duration: 0.8, delay: 1.4 }}
             >
               <iframe
-                loading="lazy"
                 title="Youtube Video"
-                src="https://www.youtube.com/embed/HiNSaaEM1us?iv_load_policy=3&rel=0&modestbranding=1&playsinline=1&autoplay=0&autohide=1"
-                allow="fullscreen; accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                src="https://www.youtube.com/embed/8Aj8n_CpETo?iv_load_policy=3&rel=0&modestbranding=1&playsinline=1&autoplay=0&autohide=1"
+                loading="lazy"
                 className="w-full h-full object-cover"
+                allow="fullscreen; accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 frameBorder="0"
               ></iframe>
             </motion.div>
@@ -275,7 +308,7 @@ const Index = () => {
                 imageArray.map((img, idx) => (
                   <button
                     key={`${img}-${idx}`}
-                    className="focus:outline-none flex-shrink-0 w-44 h-28"
+                    className="focus:outline-none flex-shrink-0 w-48 sm:w-56 md:w-64 lg:w-72 aspect-[16/9]"
                     onClick={() => setPreviewImg(img)}
                   >
                     <img
@@ -329,12 +362,23 @@ const Index = () => {
         {/* Trusted by Industry Leaders Bar */}
         <HoverGlow label="Our Exclusive Partner" />
         <div className="w-full flex flex-col items-center py-8">
-          <div className="flex flex-row justify-center items-center gap-12 w-full max-w-5xl mx-auto">
-            <a href="https://partner.blofin.com/d/CryptoGents" target="_blank">
+          <div className="flex flex-wrap justify-center items-center gap-8 sm:gap-12 w-full max-w-4xl mx-auto px-4">
+            <a
+              href="https://partner.blofin.com/d/CryptoGents"
+              target="_blank"
+              className="flex items-center"
+            >
               <img
                 src={BlofinLogo}
-                alt="Elliott Group"
-                className="h-20 object-contain "
+                alt="Blofin"
+                className="h-8 sm:h-10 md:h-12 lg:h-14 w-auto object-contain max-w-[200px]"
+              />
+            </a>
+            <a href="#" target="_blank" className="flex items-center">
+              <img
+                src={Kucoin}
+                alt="Kucoin"
+                className="h-6 sm:h-8 md:h-10 lg:h-12 w-auto object-contain max-w-[200px]"
               />
             </a>
           </div>
