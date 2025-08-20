@@ -2,7 +2,7 @@ interface TopTrainingCardProps{
     content: any
 }
 
-const TopTrainingCard = ({content} :TopTrainingCardProps) => {
+export const TopTrainingCard = ({content} :TopTrainingCardProps) => {
   return (
     <div className="w-full lg:w-2/5 shrink-0 rounded-2xl border border-gray-400 overflow-hidden">
         <div className="w-full h-[300px]">
@@ -25,4 +25,20 @@ const TopTrainingCard = ({content} :TopTrainingCardProps) => {
   )
 }
 
-export default TopTrainingCard
+
+
+
+
+export const ResultCard = ({ content }: TopTrainingCardProps) => {
+  return (
+    <div className="w-full lg:w-2/5 shrink-0 rounded-2xl border border-gray-400 overflow-hidden">
+      <div className="w-full h-[300px]">
+        <img
+          className="size-full object-cover"
+          srcSet={content.srcSet}
+          src={content.src}
+        />
+      </div>
+    </div>
+  );
+};

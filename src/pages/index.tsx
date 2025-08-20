@@ -12,15 +12,14 @@ import star from "../assets/star.svg";
 import { ArrowUpRight, Check, X } from "lucide-react";
 import HoverGlow from "../components/HoverGlow";
 import {CoachContent, faqContent} from "../const/content";
-import CallCTA from "../components/CallCTA";
+import { ResultBtn, CallCTA } from "../components/CallCTA";
 import DescHeader from "../components/DescHeader";
 import DOMPurify from 'dompurify';
 import CoachCard from "../components/CoachCard";
 import { DropDownTab } from "../components/DropDownTab";
 // import { VideoCarousel } from "../components/VideoCarousel";
-import { CommunityCarousel } from "../components/CommunityCarousel";
+import { CommunityCarousel, ResultCarousel } from "../components/CommunityCarousel";
 import BlofinLogo from "../assets/blofinLogo.png";
-import Kucoin from "../assets/Kucoin.png";
 import Result1 from "../assets/result1.jpg";
 import Result2 from "../assets/result2.jpg";
 import Result3 from "../assets/result3.jpg";
@@ -31,15 +30,7 @@ import Result7 from "../assets/result7.jpg";
 import Result8 from "../assets/result8.jpg";
 import Result9 from "../assets/result9.jpg";
 import Result10 from "../assets/result10.jpg";
-import Result11 from "../assets/result11.jpg";
-import Result12 from "../assets/result12.jpg";
-import Result13 from "../assets/result13.jpg";
-import Result14 from "../assets/result14.jpg";
-import Result15 from "../assets/result15.jpg";
-import Result16 from "../assets/result16.jpg";
-import Result17 from "../assets/result17.jpg";
-
-
+import Kucoin from "../assets/Kucoin.png";
 
 
 
@@ -71,13 +62,6 @@ const Index = () => {
     Result8,
     Result9,
     Result10,
-    Result11,
-    Result12,
-    Result13,
-    Result14,
-    Result15,
-    Result16,
-    Result17
   ];
   return (
     <div className="relative bg-black overflow-y-hidden">
@@ -308,7 +292,7 @@ const Index = () => {
                 imageArray.map((img, idx) => (
                   <button
                     key={`${img}-${idx}`}
-                    className="focus:outline-none flex-shrink-0 w-48 sm:w-56 md:w-64 lg:w-72 aspect-[16/9]"
+                    className="focus:outline-none flex-shrink-0 w-44 h-28"
                     onClick={() => setPreviewImg(img)}
                   >
                     <img
@@ -358,9 +342,14 @@ const Index = () => {
             </div>
           )}
         </div>
+        <ResultBtn
+          className="mx-auto mb-12"
+          Link="#result-section"
+          Text="See More"
+        />
 
         {/* Trusted by Industry Leaders Bar */}
-        <HoverGlow label="Our Exclusive Partner" />
+        <HoverGlow label="Our Exclusive Partners" />
         <div className="w-full flex flex-col items-center py-8">
           <div className="flex flex-wrap justify-center items-center gap-8 sm:gap-12 w-full max-w-4xl mx-auto px-4">
             <a
@@ -371,14 +360,14 @@ const Index = () => {
               <img
                 src={BlofinLogo}
                 alt="Blofin"
-                className="h-8 sm:h-10 md:h-12 lg:h-14 w-auto object-contain max-w-[200px]"
+                className="h-8 sm:h-10 md:h-12 lg:h-14 w-auto object-contain max-w-[120px]"
               />
             </a>
             <a href="#" target="_blank" className="flex items-center">
               <img
                 src={Kucoin}
                 alt="Kucoin"
-                className="h-6 sm:h-8 md:h-10 lg:h-12 w-auto object-contain max-w-[200px]"
+                className="h-6 sm:h-10 md:h-10 lg:h-12 w-auto object-contain max-w-[120px]"
               />
             </a>
           </div>
@@ -729,6 +718,23 @@ const Index = () => {
             </motion.div>
           </motion.div>
 
+          {/* The result section */}
+          <motion.div
+            initial={{ opacity: 0, y: 60 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <ResultCarousel />
+          </motion.div>
+
+          <ResultBtn
+            className="mx-auto mb-12"
+            Link="https://t.me/CryptoGentsLiveResults"
+            Text="Press For More Results"
+            abURL={true}
+          />
+
           {/* FootNote Section */}
           <motion.div
             id="extra"
@@ -762,6 +768,7 @@ const Index = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
                 viewport={{ once: true }}
+                id="my-section"
               >
                 If you're serious about leveling up your trading game, you need
                 the right setups, the right analysis, and the right traders

@@ -7,7 +7,7 @@ import avatar4 from "../assets/people_4.webp"
 import { ArrowUpRight, Check, Star, X } from "lucide-react";
 import HoverGlow from "../components/HoverGlow";
 import {CoachContent, faqContent} from "../const/content";
-import CallCTA from "../components/CallCTA";
+import {CallCTA} from "../components/CallCTA";
 import DescHeader from "../components/DescHeader";
 import DOMPurify from 'dompurify';
 import CoachCard from "../components/CoachCard";
