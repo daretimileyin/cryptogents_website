@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 interface TopTrainingCardProps{
     content: any
 }
@@ -29,16 +31,74 @@ export const TopTrainingCard = ({content} :TopTrainingCardProps) => {
 
 
 
+// export const ResultCard = ({ content }: TopTrainingCardProps) => {
+//   return (
+//     <div className="w-full lg:w-2/5 shrink-0 rounded-2xl border border-gray-400 overflow-hidden">
+//       <div className="w-full h-[300px]">
+//         <img
+//           className="size-full object-cover"
+//           srcSet={content.srcSet}
+//           src={content.src}
+//         />
+//       </div>
+//     </div>
+//   );
+// };
+
+
 export const ResultCard = ({ content }: TopTrainingCardProps) => {
+  const [showPreview, setShowPreview] = useState(false);
+
   return (
-    <div className="w-full lg:w-2/5 shrink-0 rounded-2xl border border-gray-400 overflow-hidden">
-      <div className="w-full h-[300px]">
-        <img
-          className="size-full object-cover"
-          srcSet={content.srcSet}
-          src={content.src}
-        />
+    <>
+      <div
+        className="w-full lg:w-2/5 shrink-0 rounded-2xl border border-gray-400 overflow-hidden cursor-pointer"
+        onClick={() => setShowPreview(true)}
+      >
+        <div className="w-full h-[300px]">
+          <img
+            className="size-full object-cover hover:scale-105 transition-transform duration-300"
+            srcSet={content.srcSet}
+            src={content.src}
+            alt={content.header || "Preview image"}
+          />
+        </div>
       </div>
-    </div>
+
+      {/* Preview Modal */}
+      {showPreview && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80"
+          onClick={() => setShowPreview(false)}
+        >
+          <div className="relative max-w-4xl max-h-[90vh] mx-4">
+            <button
+              className="absolute -top-10 right-0 text-white hover:text-gray-300"
+              onClick={() => setShowPreview(false)}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-8 w-8"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+            <img
+              src={content.src}
+              alt={content.header || "Preview image"}
+              className="rounded-lg object-contain max-h-[90vh] w-auto"
+            />
+          </div>
+        </div>
+      )}
+    </>
   );
 };
