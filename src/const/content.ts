@@ -38,6 +38,7 @@ import MarkIMG from "../assets/Mark.jpg";
 import HodgeIMG from "../assets/Hodge.jpg";
 import AnthonyIMG from "../assets/Anthony.jpg"
 import MikeIMG from "../assets/Mike.jpg"
+import TiffenIMG from "../assets/Tiffen.jpg"
 
 // testing
 export const videoContent = [
@@ -175,8 +176,23 @@ export const CoachContent = [
       "Proven Mentor",
       "Master",
     ],
-    coach: "Mark",
-    para: "Mark is a seasoned crypto day and swing trader with over 5 years of experience specializing in momentum and liquidity-based strategies. He excels at precise entries and exits across volatile market conditions through disciplined, data-driven analysis.<br />Starting with just $1,000, he has consistently grown his portfolio to six figures using structured risk management and emotional discipline. His expertise in liquidity flow and price action enables him to identify high-probability setups in both trending and consolidating markets.<br /> Beyond personal success, he has mentored countless traders to profitability, teaching the combination of technical precision and winning mindset required for consistent results in the dynamic crypto ecosystem.",
+    coach: "Rob",
+    para: "Rob is a seasoned crypto day and swing trader with over 5 years of experience specializing in momentum and liquidity-based strategies. He excels at precise entries and exits across volatile market conditions through disciplined, data-driven analysis.<br />Starting with just $1,000, he has consistently grown his portfolio to six figures using structured risk management and emotional discipline. His expertise in liquidity flow and price action enables him to identify high-probability setups in both trending and consolidating markets.<br /> Beyond personal success, he has mentored countless traders to profitability, teaching the combination of technical precision and winning mindset required for consistent results in the dynamic crypto ecosystem.",
+  },
+  {
+    id: 5,
+    srcSet: `${TiffenIMG} 512w, ${TiffenIMG} 1024w, ${TiffenIMG} 2048w, ${TiffenIMG} 2444w`,
+    src: TiffenIMG,
+    keywords: [
+      "Fibonacci Mastery",
+      "Volumetric Analysis",
+      "RSI Divergence Integration",
+      "Elliott Waves",
+      "Technical Precision",
+      "Confluence Trading",
+    ],
+    coach: "Tiffen",
+    para: "Marco aka Tiffen is a seasoned crypto trader with over 5 years of experience specializing in advanced Fibonacci analysis and technical precision. He has mastered the art of identifying high-probability entry and exit points through sophisticated Fibonacci retracement and extension techniques,<br /> combined with golden ratio spirals and dynamic time-based projections. His edge comes from creating powerful confluence setups—blending Fibonacci levels with volume profiles, RSI divergences, and Elliott Wave principles to stack the odds heavily in his favor.<br /> Having weathered multiple market cycles from the 2021 euphoria to the 2022 winter, Marco has consistently delivered risk-adjusted returns by emphasizing capital preservation and asymmetric reward profiles. His data-driven approach focuses on surgical accuracy rather than emotion, resulting in a proven track record of 70%+ win rates on core setups. Whether scalping DeFi tokens or swinging major alts like ETH and BTC, his disciplined methodology excels across bull runs, bear traps, and sideways markets alike.",
   },
 ];
 
