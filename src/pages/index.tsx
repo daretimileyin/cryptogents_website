@@ -30,7 +30,7 @@ import Result7 from "../assets/result7.jpg";
 import Result8 from "../assets/result8.jpg";
 import Result9 from "../assets/result9.jpg";
 import Result10 from "../assets/result10.jpg";
-import Kucoin from "../assets/Kucoin.png";
+import BydefiLogo from "../assets/bydefi.png";
 
 
 
@@ -363,13 +363,17 @@ const Index = () => {
                 className="h-8 sm:h-10 md:h-12 lg:h-14 w-auto object-contain max-w-[120px]"
               />
             </a>
-            {/* <a href="#" target="_blank" className="flex items-center">
+            <a
+              href="https://partner.bydfi.com/register?vipCode=CryptoGentsRF"
+              target="_blank"
+              className="flex items-center"
+            >
               <img
-                src={Kucoin}
-                alt="Kucoin"
-                className="h-6 sm:h-10 md:h-10 lg:h-12 w-auto object-contain max-w-[120px]"
+                src={BydefiLogo}
+                alt="Bydefi"
+                className="h-10 sm:h-12 md:h-14 lg:h-16 w-auto object-contain max-w-[160px]"
               />
-            </a> */}
+            </a>
           </div>
         </div>
 
