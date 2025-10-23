@@ -255,7 +255,7 @@ const Index = () => {
             >
               <iframe
                 title="Youtube Video"
-                src="https://www.youtube.com/embed/8Aj8n_CpETo?iv_load_policy=3&rel=0&modestbranding=1&playsinline=1&autoplay=0&autohide=1"
+                src="https://www.youtube.com/embed/j0bg5GFmSNY?iv_load_policy=3&rel=0&modestbranding=1&playsinline=1&autoplay=0&autohide=1"
                 loading="lazy"
                 className="w-full h-full object-cover"
                 allow="fullscreen; accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
