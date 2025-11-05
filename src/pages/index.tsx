@@ -17,7 +17,6 @@ import DescHeader from "../components/DescHeader";
 import DOMPurify from 'dompurify';
 import CoachCard from "../components/CoachCard";
 import { DropDownTab } from "../components/DropDownTab";
-// import { VideoCarousel } from "../components/VideoCarousel";
 import { CommunityCarousel, ResultCarousel } from "../components/CommunityCarousel";
 import BlofinLogo from "../assets/blofinLogo.png";
 import Result1 from "../assets/result1.jpg";
@@ -245,6 +244,8 @@ const Index = () => {
                 <ArrowUpRight />
               </motion.a>
             </motion.div>
+
+            
 
             {/* YouTube Video 1 2*/}
             <motion.div
